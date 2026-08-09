@@ -1,7 +1,7 @@
 <!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <meta name="theme-color" content="#14663f"/>
-<title>Social Studies & My World — First Fruits</title>
+<title>Sample Lesson · Who I Am in Christ — First Fruits</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,600;1,9..144,600&family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="site.css"></head><body><div class="trustbar">Free Shipping on Orders $75+ &nbsp;·&nbsp; Ships in 2–3 Business Days &nbsp;·&nbsp; 30-Day Satisfaction Guarantee</div>
@@ -19,28 +19,113 @@
     <button class="icon-btn cart-btn" onclick="openCart()" aria-label="Cart"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><path d="M6 6h15l-1.5 9h-12z" stroke-linejoin="round"/><path d="M6 6L5 2H2" stroke-linecap="round"/><circle cx="9" cy="20" r="1.6"/><circle cx="18" cy="20" r="1.6"/></svg><span class="cart-count" id="cartCount" style="display:none">0</span></button>
     <button class="icon-btn menu-toggle" onclick="toggleMenu()" aria-label="Menu"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.4" viewBox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18" stroke-linecap="round"/></svg></button>
   </div>
-</nav></header><div class="wrap">
-  <div class="crumb"><a href="index.html">Home</a> / <a href="index.html#shop">Shop</a> / Social Studies & My World</div>
-  <div class="pdp">
-    <div class="gal"><div class="main"><img src="first-fruits-assets/social-studies.jpg" alt="Social Studies & My World"></div>
-    <div class="cap">Photography in progress — more shots coming for this product.</div></div>
-    <div class="buybox">
-      <span class="badge">K–2 · Instant download</span>
-      <div class="rating"><span class="stars">★★★★★</span> New — founding-family reviews coming soon</div>
-      <h1 class="serif">Social Studies & My World</h1>
-      <div class="price">$4.99 <small>USD</small></div>
-      <ul class="benefits"><li><span class="ck">✓</span> Explores family, community, culture, and geography</li><li><span class="ck">✓</span> Teaches stewardship of the world God made</li><li><span class="ck">✓</span> Story- and activity-based for young learners</li><li><span class="ck">✓</span> Print-and-go, reusable</li></ul>
-      <div class="buy"><div class="qty"><button onclick="qd(-1)">−</button><span id="q">1</span><button onclick="qd(1)">+</button></div>
-        <button class="btn btn-coral" onclick="addN('social-studies')">Add to Cart</button></div>
-      <div class="trustrow"><div><svg width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 7h13v8H4zM17 10h3l1 3v2h-4"/><circle cx="7.5" cy="17.5" r="1.5"/><circle cx="17.5" cy="17.5" r="1.5"/></svg> Ships / downloads fast</div>
-        <div><svg width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 12a9 9 0 1 0 18 0A9 9 0 0 0 3 12z"/><path d="M8 12l3 3 5-6"/></svg> 30-day guarantee</div>
-        <div><svg width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 3l8 4v5c0 5-3.5 7.5-8 9-4.5-1.5-8-4-8-9V7z"/></svg> Standards-aligned</div></div>
-      <div class="pairs"><h4>Pairs well with</h4><div class="pair-row"><a class="pair" href="product-identity.html"><img src="first-fruits-assets/identity.jpg" alt=""><div><b>Who I Am in Christ</b><span>$14.99</span></div></a><a class="pair" href="product-portfolio.html"><img src="first-fruits-assets/binder.jpg" alt=""><div><b>365 Day Learning Binder</b><span>$79.99</span></div></a></div></div>
+</nav></header>
+<style>
+.sl-hero{background:var(--sage,#eef7ef);padding:34px 0 30px}
+.sl-hero .wrap{max-width:1040px}
+.sl-eyebrow{color:var(--teal,#1fa5b8);font-weight:800;letter-spacing:.12em;text-transform:uppercase;font-size:.8rem;margin-bottom:8px}
+.sl-hero h1{font-family:'Fraunces',Georgia,serif;color:var(--forest-deep,#0e4d2f);font-size:clamp(1.8rem,3.4vw,2.5rem);margin:0 0 6px}
+.sl-hero p{color:var(--ink-soft,#4d6156);max-width:720px;margin:0}
+.sl-idea{max-width:1040px;margin:22px auto 0;background:#fff;border:1px solid var(--line,#e7ded0);border-left:6px solid var(--gold,#f0a830);border-radius:12px;padding:16px 20px}
+.sl-idea b{color:var(--forest-deep,#0e4d2f)}
+.sl-idea .verse{font-style:italic;color:var(--ink-soft,#4d6156)}
+.sl-grid{max-width:1040px;margin:26px auto 0;display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.sl-card{border:1px solid var(--line,#e7ded0);border-radius:14px;overflow:hidden;background:#fff;box-shadow:0 6px 20px rgba(20,102,63,.06)}
+.sl-card .ch{color:#fff;font-weight:800;text-align:center;padding:12px;font-size:1.15rem;font-family:'Fraunces',Georgia,serif}
+.sl-card.k .ch{background:#14663f}.sl-card.g1 .ch{background:#1fa5b8}.sl-card.g2 .ch{background:#ef6a52}
+.sl-card .bd{padding:16px 18px}
+.sl-sec{font-weight:800;color:var(--forest-deep,#0e4d2f);font-size:.78rem;text-transform:uppercase;letter-spacing:.06em;margin:14px 0 5px}
+.sl-sec:first-child{margin-top:0}
+.sl-card ul{margin:0 0 0 18px;padding:0}
+.sl-card li{margin-bottom:5px;color:var(--ink,#22352b);font-size:.92rem;line-height:1.4}
+.sl-mini{color:var(--ink-soft,#4d6156);font-size:.85rem;margin-bottom:4px}
+.sl-note{max-width:1040px;margin:26px auto 0;background:var(--gold-soft,#fdeecb);border-radius:12px;padding:16px 20px;color:var(--ink,#22352b)}
+.sl-cta{max-width:1040px;margin:26px auto 0;display:flex;gap:14px;flex-wrap:wrap;align-items:center}
+@media(max-width:860px){.sl-grid{grid-template-columns:1fr}}
+</style>
+
+<section class="sl-hero"><div class="wrap">
+  <div class="crumb"><a href="index.html">Home</a> / <a href="product-identity.html">Who I Am in Christ</a> / Sample Lesson</div>
+  <div class="sl-eyebrow">Free Sample Lesson</div>
+  <h1>“Who I Am in Christ” — Unit 1, Week 1</h1>
+  <p>See exactly how First Fruits works: <b>one big idea, taught three ways.</b> The same truth is delivered at each grade’s developmental level — visual, auditory, and kinesthetic — integrating Scripture, academic standards, and hands-on activities into one cohesive lesson.</p>
+  <div class="sl-idea">
+    <div><b>Big idea:</b> I am made in the image of God.</div>
+    <div class="verse"><b style="font-style:normal;color:#0e4d2f">Memory verse:</b> “Be that new person who was made to be like God, truly good and pleasing to him.” — Ephesians 4:24 (ERV)</div>
+  </div>
+</div></section>
+
+<div class="wrap">
+  <div class="sl-grid">
+    <div class="sl-card k">
+      <div class="ch">Kindergarten</div>
+      <div class="bd">
+        <div class="sl-sec">Phonics (Mon–Fri)</div>
+        <div class="sl-mini">Mon <b>m</b> · Tue <b>s</b> · Wed <b>a</b> · Thu <b>t</b> · Fri Review &nbsp;|&nbsp; High-frequency words: <b>I, am, the</b></div>
+        <ul>
+          <li>Intro letter <b>m</b>: “Mighty Maker made me” (point up, then to self)</li>
+          <li>Initial-sound thumbs up/down: moon, monkey, sun, mountain…</li>
+          <li>Blending &amp; segmenting: am, mat, map, my</li>
+        </ul>
+        <div class="sl-sec">Activities (hands-on)</div>
+        <ul>
+          <li>Creation BINGO</li>
+          <li>Sequencing cards for the Creation account</li>
+          <li>Decodable reader: highlight “m” words; heart the high-frequency words</li>
+        </ul>
+        <div class="sl-sec">Social-Emotional</div>
+        <ul>
+          <li>“When I feel ____, I can go to God for ____.”</li>
+          <li>Feelings picture cards + response cards</li>
+        </ul>
+      </div>
+    </div>
+    <div class="sl-card g1">
+      <div class="ch">First Grade</div>
+      <div class="bd">
+        <div class="sl-sec">Reading Comprehension</div>
+        <div class="sl-mini">Read <b>Genesis 1:26–27</b></div>
+        <ul>
+          <li><b>Before:</b> What does it mean to be made in God’s image?</li>
+          <li><b>During:</b> Who made people? How are we different from animals? What job did God give us?</li>
+          <li><b>After:</b> Who do we look like? Should we be kind? Why?</li>
+        </ul>
+        <div class="sl-sec">Vocabulary</div>
+        <ul><li>image · creator · special · purpose</li></ul>
+        <div class="sl-sec">Writing Response</div>
+        <ul>
+          <li>“Because I am made in God’s image…”</li>
+          <li>I can… / I should… / God wants…</li>
+        </ul>
+      </div>
+    </div>
+    <div class="sl-card g2">
+      <div class="ch">Second Grade</div>
+      <div class="bd">
+        <div class="sl-sec">STEM — “Mirrors Reflect”</div>
+        <div class="sl-mini">Question: What does a mirror do?</div>
+        <ul>
+          <li><b>Materials:</b> mirror, flashlight, foil, spoon, aluminum pan</li>
+          <li><b>Experiment:</b> Which materials reflect best?</li>
+          <li><b>Discuss:</b> A mirror reflects the person in front of it. God made us to reflect Him — we are not God; we reflect His character.</li>
+        </ul>
+        <div class="sl-sec">Reflection Journal</div>
+        <ul>
+          <li>How can I reflect God’s love this week?</li>
+          <li>Draw one way · write one paragraph</li>
+        </ul>
+      </div>
     </div>
   </div>
+
+  <div class="sl-note"><b>Whole-child, every learning style.</b> Notice there’s no “worksheet with a verse attached.” Each grade gets the same truth through the right developmental doorway — phonics and play for K, reading and writing for 1st, and hands-on science for 2nd.</div>
+
+  <div class="sl-cta">
+    <a class="btn btn-coral" href="product-identity.html">Get “Who I Am in Christ” — $14.99</a>
+    <a class="btn btn-ghost" href="index.html#shop">Browse all units</a>
+  </div>
 </div>
-<section class="blk"><div class="wrap"><h2 class="serif">What's inside</h2><p class="body">Printable exploration pages on community, culture, helpers, and geography.</p></div></section>
-<section class="blk"><div class="wrap"><h2 class="serif">Where this fits</h2><p class="body">First Fruits is one clear system — start with a unit and build as you go.</p><div class="fits"><div class="fitc"><div class="n">1</div><b>Start with a Unit</b></div><div class="fitc"><div class="n">2</div><b>Add the Materials Kit</b></div><div class="fitc active"><div class="n">3</div><b>Add Skill Practice</b></div><div class="fitc"><div class="n">4</div><b>Upgrade to Full Portfolio</b></div></div></div></section>
+<div style="height:40px"></div>
 <footer class="site"><div class="wrap"><div class="foot-grid">
     <div class="foot-brand"><a class="brand" href="index.html"><svg class="logomark" viewBox="0 0 64 60" aria-hidden="true"><g stroke="#f0a830" stroke-width="2.6" stroke-linecap="round"><line x1="32" y1="1.5" x2="32" y2="8"/><line x1="20.5" y1="4.5" x2="23" y2="10"/><line x1="43.5" y1="4.5" x2="41" y2="10"/><line x1="11.5" y1="12.5" x2="16" y2="16"/><line x1="52.5" y1="12.5" x2="48" y2="16"/><line x1="6.5" y1="23" x2="12" y2="24.5"/><line x1="57.5" y1="23" x2="52" y2="24.5"/></g><circle cx="32" cy="23" r="12.5" fill="#f0a830"/><rect x="30.1" y="14.5" width="3.8" height="17" rx="1.2" fill="#fff"/><rect x="26" y="20.2" width="12" height="3.8" rx="1.2" fill="#fff"/><path d="M32 35C24 31 14 31 6 34L6 48C14 45 24 45 32 49Z" fill="#e2673a"/><path d="M32 35C40 31 50 31 58 34L58 48C50 45 40 45 32 49Z" fill="#38b6bd"/><path d="M32 38C24.5 34.3 15.5 34.3 8.5 37L8.5 49.5C15.5 46.8 24.5 46.8 32 50.5Z" fill="#fff" stroke="#10254a" stroke-width="1.8" stroke-linejoin="round"/><path d="M32 38C39.5 34.3 48.5 34.3 55.5 37L55.5 49.5C48.5 46.8 39.5 46.8 32 50.5Z" fill="#fff" stroke="#10254a" stroke-width="1.8" stroke-linejoin="round"/><line x1="32" y1="38" x2="32" y2="50.5" stroke="#10254a" stroke-width="1.8"/></svg><span class="wordmark"><span class="wm-first">First</span> <span class="wm-fruits"><span class="a">F</span><span class="b">r</span><span class="c">u</span><span class="d">i</span><span class="d">t</span><span class="d">s</span></span></span></a>
       <p style="margin-top:12px"><b style="color:#fff">Learn. Grow. Shine.</b><br>Christ-centered K–2 curriculum. Nurturing minds, rooted in Truth.</p></div>

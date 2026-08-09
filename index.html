@@ -194,7 +194,9 @@ section.block{padding:52px 0}
 
 /* ---------- Team / founders ---------- */
 .team{background:var(--sage-soft)}
-.team-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;max-width:920px;margin:0 auto}
+.team-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;max-width:1040px;margin:0 auto}
+@media(max-width:900px){.team-grid{grid-template-columns:repeat(2,1fr);max-width:560px}}
+@media(max-width:520px){.team-grid{grid-template-columns:1fr;max-width:320px}}
 .team-card{background:var(--paper);border-radius:var(--radius);padding:28px 22px;text-align:center;box-shadow:var(--shadow);border:1px solid var(--line)}
 .team-card .avatar{width:96px;height:96px;border-radius:50%;margin:0 auto 14px;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:2rem;color:#fff;font-family:'Nunito'}
 .team-card h4{color:var(--forest-deep);font-size:1.18rem}
@@ -1057,22 +1059,28 @@ body.no-scroll{overflow:hidden}
     </div>
     <div class="team-grid">
       <div class="team-card">
-        <div class="avatar" style="background:var(--forest)">A</div>
-        <h4>Anne</h4>
-        <div class="role">Co-Founder · Curriculum &amp; Vision</div>
-        <p>Brings early childhood teaching and a heart for discipleship, shaping the mission and the whole-child method behind every unit.</p>
+        <div class="avatar" style="background:var(--gold)">L</div>
+        <h4>Lauren Colon</h4>
+        <div class="role">Co-Founder · Story &amp; Communications</div>
+        <p>Opens the First Fruits story and carries the message — connecting families, partners, and the mission behind every lesson.</p>
       </div>
       <div class="team-card">
-        <div class="avatar" style="background:var(--teal)">E</div>
-        <h4>Enith</h4>
-        <div class="role">Co-Founder · Growth &amp; Operations</div>
-        <p>Leads strategy, partnerships, and the sustainable business model that keeps the ministry growing and accessible.</p>
+        <div class="avatar" style="background:var(--forest)">A</div>
+        <h4>Anne Livingston</h4>
+        <div class="role">Co-Founder · Early Childhood Specialist</div>
+        <p>Brings together early childhood education and biblical discipleship through a whole-child approach that nurtures children&rsquo;s faith, relationships, and learning from the earliest years.</p>
       </div>
       <div class="team-card">
         <div class="avatar" style="background:var(--coral)">A</div>
-        <h4>Anthony</h4>
+        <h4>Anthony Colon</h4>
         <div class="role">Co-Founder · Product &amp; Web</div>
         <p>Builds the platform and product experience, turning the vision into tools families and teachers can use every day.</p>
+      </div>
+      <div class="team-card">
+        <div class="avatar" style="background:var(--teal)">E</div>
+        <h4>Enith Hawthorne</h4>
+        <div class="role">Co-Founder · Growth &amp; Operations</div>
+        <p>Leads strategy, partnerships, and the sustainable business model that keeps the ministry growing and accessible.</p>
       </div>
     </div>
     <p class="placeholder-note">Placeholder headshots &amp; bios — send me your photos and a sentence each and I'll drop them in.</p>
