@@ -1,0 +1,1616 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="theme-color" content="#14663f" />
+<title>First Fruits — Faith-Based K–2 Learning Portfolio</title>
+<meta name="description" content="Scripture-integrated K–2 learning portfolios that develop the whole child — spiritually, academically, and emotionally. Nurturing minds, rooted in Truth." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500;1,9..144,600&family=Nunito:ital,wght@0,400;0,600;0,700;0,800;0,900;1,600&display=swap" rel="stylesheet" />
+<style>
+:root{
+  --forest:#14663f;
+  --forest-deep:#0e4d2f;
+  --forest-bright:#1f8a54;
+  --sage:#d8ecdc;
+  --sage-soft:#eef7ef;
+  --teal:#1fa5b8;
+  --teal-soft:#d5f0f4;
+  --gold:#f6b53c;
+  --gold-soft:#fdeecb;
+  --coral:#ef6a52;
+  --coral-soft:#fbe0d9;
+  --navy:#10254a;
+  --sun:#f0a830;
+  --logo-coral:#e2673a;
+  --logo-orange:#ef8f3c;
+  --logo-teal:#38b6bd;
+  --logo-green:#7fae4f;
+  --cream:#fbf6ec;
+  --paper:#ffffff;
+  --ink:#22352b;
+  --ink-soft:#4d6156;
+  --line:#e7ded0;
+  --shadow:0 10px 30px rgba(20,102,63,.10);
+  --shadow-lg:0 20px 50px rgba(20,102,63,.16);
+  --radius:22px;
+  --radius-sm:14px;
+  --maxw:1200px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:'Nunito',system-ui,sans-serif;
+  color:var(--ink);
+  background:var(--cream);
+  line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+}
+h1,h2,h3,h4{line-height:1.15;font-weight:800}
+.serif{font-family:'Fraunces',Georgia,serif;font-weight:600}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 22px}
+.btn{
+  display:inline-flex;align-items:center;gap:8px;
+  font-family:'Nunito';font-weight:800;font-size:1rem;line-height:1.2;
+  padding:12px 22px;border-radius:50px;border:none;cursor:pointer;
+  transition:transform .15s ease, box-shadow .15s ease, background .15s ease;
+  text-align:center;
+}
+.btn:hover{transform:translateY(-2px)}
+.btn-coral{background:var(--coral);color:#fff;box-shadow:0 8px 18px rgba(239,106,82,.35)}
+.btn-coral:hover{background:#e85a41}
+.btn-forest{background:var(--forest);color:#fff;box-shadow:0 8px 18px rgba(20,102,63,.3)}
+.btn-forest:hover{background:var(--forest-deep)}
+.btn-gold{background:var(--gold);color:#4a3512;box-shadow:0 8px 18px rgba(246,181,60,.4)}
+.btn-gold:hover{background:#f0a922}
+.btn-ghost{background:transparent;color:var(--forest);border:2px solid var(--forest)}
+.btn-ghost:hover{background:var(--forest);color:#fff}
+.btn-sm{padding:10px 18px;font-size:.92rem}
+.eyebrow{
+  text-transform:uppercase;letter-spacing:.14em;font-size:.78rem;
+  font-weight:800;color:var(--teal);margin-bottom:10px;
+}
+
+/* ---------- Announcement / trust bar ---------- */
+.trustbar{background:var(--forest-deep);color:#eafff2;font-size:.86rem;font-weight:700}
+.trustbar .wrap{display:flex;justify-content:center;gap:34px;padding:9px 22px;flex-wrap:wrap}
+.trustbar span{display:inline-flex;align-items:center;gap:7px;white-space:nowrap}
+.trustbar svg{flex:none}
+
+/* ---------- Header ---------- */
+header.site{position:sticky;top:0;z-index:60;background:rgba(255,255,255,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;gap:22px;padding:14px 22px;max-width:var(--maxw);margin:0 auto}
+.brand{display:flex;align-items:center;gap:11px}
+.brand .logomark{width:42px;height:40px;flex:none}
+.wordmark{font-family:'Nunito',sans-serif;font-weight:900;font-size:1.5rem;letter-spacing:-.01em;line-height:1;white-space:nowrap}
+.wm-first{color:var(--navy)}
+.wm-fruits span:nth-child(1){color:var(--logo-coral)}
+.wm-fruits span:nth-child(2){color:var(--logo-orange)}
+.wm-fruits span:nth-child(3){color:var(--sun)}
+.wm-fruits span:nth-child(4){color:var(--logo-teal)}
+.wm-fruits span:nth-child(5){color:var(--logo-green)}
+.wm-fruits span:nth-child(6){color:var(--logo-green)}
+.nav-links{display:flex;gap:24px;margin-left:18px;font-weight:800;font-size:.98rem}
+.nav-links a{color:var(--ink);padding:6px 2px;border-bottom:2px solid transparent;transition:.15s}
+.nav-links a:hover{color:var(--forest);border-color:var(--gold)}
+.nav-tools{margin-left:auto;display:flex;align-items:center;gap:14px}
+.icon-btn{background:none;border:none;cursor:pointer;color:var(--forest);display:inline-flex;padding:6px;border-radius:10px}
+.icon-btn:hover{background:var(--sage-soft)}
+.cart-btn{position:relative}
+.cart-count{
+  position:absolute;top:-4px;right:-4px;background:var(--coral);color:#fff;
+  font-size:.68rem;font-weight:800;min-width:18px;height:18px;border-radius:9px;
+  display:flex;align-items:center;justify-content:center;padding:0 4px;
+}
+.menu-toggle{display:none}
+
+/* ---------- Hero ---------- */
+.hero{background:
+  radial-gradient(1200px 500px at 80% -10%, var(--gold-soft), transparent 60%),
+  radial-gradient(900px 500px at -10% 30%, var(--teal-soft), transparent 55%),
+  var(--cream);
+  padding:48px 0 36px;overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:46px;align-items:center}
+.hero h1{font-size:clamp(2rem,4vw,3.1rem);color:var(--forest-deep);letter-spacing:-.01em}
+.hero h1 em{font-style:italic;color:var(--teal);font-weight:600}
+.hero p.lead{font-size:1.18rem;color:var(--ink-soft);margin:20px 0 8px;max-width:33ch}
+.hero .cta-row{display:flex;gap:14px;flex-wrap:wrap;margin-top:22px}
+.social-proof{display:flex;align-items:center;gap:12px;margin-top:26px;font-weight:700;color:var(--ink-soft);font-size:.95rem}
+.stars{color:var(--gold);letter-spacing:2px;font-size:1.05rem}
+.hero-art{position:relative}
+.hero-card{
+  background:var(--paper);border-radius:26px;box-shadow:var(--shadow-lg);
+  padding:18px;transform:rotate(-2deg);border:1px solid var(--line)
+}
+.hero-badge{
+  position:absolute;background:var(--gold);color:#4a3512;font-weight:900;
+  border-radius:16px;padding:12px 16px;box-shadow:var(--shadow);font-size:.9rem;
+  transform:rotate(4deg);top:-18px;right:-8px;text-align:center;line-height:1.2
+}
+.hero-badge small{display:block;font-weight:700;font-size:.72rem}
+
+/* ---------- Value strip ---------- */
+.values-strip{background:var(--forest);color:#eafff2}
+.values-strip .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;padding:22px}
+.value{display:flex;align-items:center;gap:12px;font-weight:800;font-size:.98rem}
+.value .vic{background:rgba(255,255,255,.13);border-radius:12px;width:42px;height:42px;display:flex;align-items:center;justify-content:center;flex:none}
+
+/* ---------- Section shell ---------- */
+section.block{padding:52px 0}
+.sec-head{text-align:center;max-width:640px;margin:0 auto 40px}
+.sec-head h2{font-size:clamp(1.5rem,2.6vw,2.1rem);color:var(--forest-deep)}
+.sec-head p{color:var(--ink-soft);font-size:1.08rem;margin-top:12px}
+
+/* ---------- Collections ---------- */
+.collections{background:var(--sage-soft)}
+.col-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.col-card{
+  background:var(--paper);border-radius:var(--radius);padding:26px 22px;text-align:center;
+  box-shadow:var(--shadow);border:1px solid var(--line);transition:.18s;display:block
+}
+.col-card:hover{transform:translateY(-5px);box-shadow:var(--shadow-lg)}
+.col-emoji{width:64px;height:64px;border-radius:18px;margin:0 auto 14px;display:flex;align-items:center;justify-content:center}
+.col-card h3{font-size:1.2rem;color:var(--forest);margin-bottom:6px}
+.col-card span{color:var(--ink-soft);font-weight:700;font-size:.9rem}
+
+/* ---------- Products ---------- */
+.prod-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:22px}
+.card{
+  background:var(--paper);border-radius:var(--radius);overflow:hidden;
+  box-shadow:var(--shadow);border:1px solid var(--line);display:flex;flex-direction:column;transition:.18s
+}
+.card:hover{transform:translateY(-5px);box-shadow:var(--shadow-lg)}
+.card .thumb{position:relative;aspect-ratio:4/3;overflow:hidden;background:var(--sage-soft)}
+.card .thumb > svg{width:100%;height:100%}
+.pill{
+  position:absolute;top:12px;left:12px;background:var(--coral);color:#fff;
+  font-weight:800;font-size:.72rem;padding:5px 11px;border-radius:50px;letter-spacing:.03em
+}
+.pill.teal{background:var(--teal)}
+.pill.gold{background:var(--gold);color:#4a3512}
+.card .body{padding:20px;display:flex;flex-direction:column;flex:1}
+.card .body h3{font-size:1.18rem;color:var(--forest-deep)}
+.card .fmt{font-size:.78rem;font-weight:800;color:var(--teal);text-transform:uppercase;letter-spacing:.08em;margin:4px 0 6px}
+.card .desc{color:var(--ink-soft);font-size:.94rem;flex:1}
+.card .stars-sm{color:var(--gold);font-size:.85rem;letter-spacing:1px;margin:8px 0 2px}
+.card .buy{display:flex;align-items:center;justify-content:space-between;margin-top:14px;gap:10px}
+.card .buy .btn{white-space:nowrap;padding:10px 16px;font-size:.9rem;flex-shrink:0}
+.card .buy .price{white-space:nowrap}
+.price{font-weight:900;font-size:1.32rem;color:var(--forest)}
+.price small{font-weight:700;font-size:.8rem;color:var(--ink-soft)}
+
+/* ---------- Inside the unit ---------- */
+.inside{background:var(--cream)}
+.inside-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.inside-card{background:var(--paper);border-radius:var(--radius);padding:24px 20px;box-shadow:var(--shadow);border:1px solid var(--line);text-align:center;transition:.18s}
+.inside-card:hover{transform:translateY(-5px);box-shadow:var(--shadow-lg)}
+.inside-card .ii{width:56px;height:56px;border-radius:16px;margin:0 auto 12px;display:flex;align-items:center;justify-content:center}
+.inside-card h4{color:var(--forest-deep);font-size:1.08rem;margin-bottom:6px}
+.inside-card p{color:var(--ink-soft);font-size:.9rem;min-height:52px}
+.inside-card a{display:inline-block;margin-top:8px;font-weight:800;color:var(--teal);font-size:.9rem;cursor:pointer}
+.inside-card a:hover{color:var(--forest)}
+
+/* ---------- Team / founders ---------- */
+.team{background:var(--sage-soft)}
+.team-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;max-width:1040px;margin:0 auto}
+@media(max-width:900px){.team-grid{grid-template-columns:repeat(2,1fr);max-width:560px}}
+@media(max-width:520px){.team-grid{grid-template-columns:1fr;max-width:320px}}
+.team-card{background:var(--paper);border-radius:var(--radius);padding:28px 22px;text-align:center;box-shadow:var(--shadow);border:1px solid var(--line)}
+.team-card .avatar{width:96px;height:96px;border-radius:50%;margin:0 auto 14px;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:2rem;color:#fff;font-family:'Nunito'}
+.team-card h4{color:var(--forest-deep);font-size:1.18rem}
+.team-card .role{color:var(--teal);font-weight:800;font-size:.85rem;text-transform:uppercase;letter-spacing:.06em;margin:2px 0 10px}
+.team-card p{color:var(--ink-soft);font-size:.92rem}
+.placeholder-note{text-align:center;margin-top:24px;font-size:.86rem;color:var(--ink-soft);font-style:italic}
+
+/* ---------- Sponsors ---------- */
+.sponsors{background:var(--paper);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.sponsors .wrap{padding:30px 22px;text-align:center}
+.sponsors .lbl{font-weight:800;text-transform:uppercase;letter-spacing:.1em;font-size:.78rem;color:var(--ink-soft);margin-bottom:18px}
+.sponsor-row{display:flex;justify-content:center;align-items:center;gap:40px;flex-wrap:wrap;opacity:.7}
+.sponsor-logo{display:flex;align-items:center;gap:8px;font-weight:900;color:var(--forest);font-size:1.05rem}
+.sponsor-logo svg{opacity:.9}
+
+/* ---------- Giving in cart ---------- */
+.give-block{background:var(--sage-soft);border:1px dashed var(--forest-bright);border-radius:12px;padding:12px 14px;margin-bottom:14px}
+.giverow{display:flex;align-items:center;gap:10px;font-weight:700;font-size:.9rem;color:var(--ink);cursor:pointer}
+.giverow input{width:18px;height:18px;accent-color:var(--forest);flex:none}
+.giverow b{margin-left:auto;color:var(--forest);font-weight:900}
+.giveline{display:flex;justify-content:space-between;font-weight:700;font-size:.9rem;color:var(--forest-bright);margin-bottom:6px}
+
+/* ---------- Launch spotlight ---------- */
+.spotlight{background:linear-gradient(135deg,#0e4d2f,#1f8a54)}
+.spotlight .wrap{display:grid;grid-template-columns:.95fr 1.05fr;gap:44px;align-items:center;color:#eafff2}
+.spotlight .eyebrow{color:var(--gold)}
+.spotlight h2{font-size:clamp(1.6rem,2.8vw,2.2rem);color:#fff}
+.spotlight h2 em{font-style:italic;color:var(--gold);font-weight:600}
+.spotlight p.lead{font-size:1.12rem;color:#dff5e6;margin-top:14px}
+.spot-tags{display:flex;flex-wrap:wrap;gap:10px;margin:20px 0 24px}
+.spot-tags span{background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.22);border-radius:50px;padding:7px 15px;font-weight:800;font-size:.85rem}
+.spot-card{background:var(--paper);border-radius:26px;box-shadow:var(--shadow-lg);padding:16px}
+.spot-card .thumb{border-radius:16px;overflow:hidden}
+
+/* ---------- Membership plans ---------- */
+.plans{background:var(--cream)}
+.plan-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;align-items:stretch}
+.plan{
+  background:var(--paper);border-radius:var(--radius);padding:28px 22px;border:1px solid var(--line);
+  box-shadow:var(--shadow);display:flex;flex-direction:column;position:relative;transition:.18s
+}
+.plan:hover{transform:translateY(-5px);box-shadow:var(--shadow-lg)}
+.plan.featured{border:2px solid var(--forest);box-shadow:var(--shadow-lg)}
+.plan .tag{position:absolute;top:-13px;left:50%;transform:translateX(-50%);background:var(--forest);color:#fff;font-weight:800;font-size:.72rem;padding:5px 14px;border-radius:50px;letter-spacing:.04em;white-space:nowrap}
+.plan .pico{width:50px;height:50px;border-radius:14px;display:flex;align-items:center;justify-content:center;margin-bottom:14px}
+.plan h3{font-size:1.22rem;color:var(--forest-deep)}
+.plan .aud{font-size:.85rem;font-weight:800;color:var(--teal);text-transform:uppercase;letter-spacing:.06em;margin-top:2px}
+.plan .cost{margin:16px 0 4px;font-weight:900;font-size:2rem;color:var(--forest)}
+.plan .cost small{font-size:.9rem;font-weight:700;color:var(--ink-soft)}
+.plan .sub{font-size:.85rem;color:var(--ink-soft);font-weight:700;min-height:20px}
+.plan ul{list-style:none;margin:18px 0;display:grid;gap:10px;flex:1}
+.plan ul li{display:flex;gap:9px;font-size:.92rem;color:var(--ink);align-items:flex-start}
+.plan ul li::before{content:"✓";color:var(--forest-bright);font-weight:900;flex:none}
+.plan .btn{width:100%;justify-content:center}
+.enterprise{margin-top:24px;background:var(--forest);color:#eafff2;border-radius:var(--radius);padding:26px 30px;display:flex;justify-content:space-between;align-items:center;gap:22px;flex-wrap:wrap}
+.enterprise h3{color:#fff;font-size:1.25rem}
+.enterprise p{color:#cfe9d6;font-size:.95rem;margin-top:4px}
+.enterprise .tiers{display:flex;gap:26px;flex-wrap:wrap;font-weight:800}
+.enterprise .tiers div span{display:block;color:var(--gold);font-size:1.15rem}
+.enterprise .tiers div small{color:#a9cfb4;font-weight:700;font-size:.8rem}
+
+/* ---------- Mission band ---------- */
+.mission{background:linear-gradient(135deg,var(--forest),var(--forest-bright));color:#eafff2;text-align:center}
+.mission .wrap{max-width:860px}
+.mission .eyebrow{color:var(--gold)}
+.mission .verse{font-family:'Fraunces';font-style:italic;font-size:clamp(1.4rem,2.6vw,1.95rem);font-weight:500;line-height:1.35;color:#fff}
+.mission .cite{margin-top:18px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;font-size:.82rem;color:var(--gold)}
+.mission .stmt{margin-top:26px;font-size:1.12rem;color:#dff5e6}
+
+/* ---------- Principles ---------- */
+.princ-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:18px}
+.princ{text-align:center;padding:10px}
+.princ .pn{
+  width:58px;height:58px;border-radius:16px;margin:0 auto 12px;display:flex;align-items:center;justify-content:center;
+  font-weight:900;font-size:1.2rem;color:#fff
+}
+.princ h4{color:var(--forest-deep);font-size:1.05rem;margin-bottom:6px}
+.princ p{font-size:.9rem;color:var(--ink-soft)}
+
+/* ---------- Differentiator / whole child ---------- */
+.whole{background:var(--gold-soft)}
+.whole .wrap{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:center}
+.whole h2{font-size:clamp(1.5rem,2.6vw,2.05rem);color:var(--forest-deep)}
+.whole p.big{font-size:1.12rem;color:var(--ink-soft);margin-top:16px}
+.check-list{margin-top:22px;display:grid;gap:14px}
+.check-item{display:flex;gap:12px;align-items:flex-start;font-weight:700;color:var(--ink)}
+.check-item .ck{flex:none;width:26px;height:26px;border-radius:50%;background:var(--forest);color:#fff;display:flex;align-items:center;justify-content:center;font-size:.8rem}
+.domains{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.domain{background:var(--paper);border-radius:var(--radius-sm);padding:22px;box-shadow:var(--shadow);border:1px solid var(--line)}
+.domain .di{width:46px;height:46px;border-radius:12px;display:flex;align-items:center;justify-content:center;margin-bottom:10px}
+.domain h4{color:var(--forest);font-size:1.08rem}
+.domain p{font-size:.9rem;color:var(--ink-soft);margin-top:4px}
+
+/* ---------- Testimonials ---------- */
+.testi-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.testi{background:var(--paper);border-radius:var(--radius);padding:26px;box-shadow:var(--shadow);border:1px solid var(--line);position:relative}
+.testi .stars{color:var(--gold);margin-bottom:10px}
+.testi p{font-size:1rem;color:var(--ink);font-weight:600}
+.testi .who{margin-top:16px;display:flex;align-items:center;gap:12px}
+.testi .av{width:44px;height:44px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:900;color:#fff;font-size:1rem}
+.testi .who b{display:block;font-size:.95rem}
+.testi .who span{font-size:.82rem;color:var(--ink-soft);font-weight:700}
+
+/* ---------- Sample / email capture ---------- */
+.sample{background:linear-gradient(135deg,var(--teal),#178a9b);color:#fff}
+.sample .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center}
+.sample h2{font-size:clamp(1.5rem,2.6vw,2.05rem)}
+.sample p{margin-top:14px;font-size:1.08rem;color:#e5fbff}
+.sample form{display:flex;gap:10px;margin-top:22px;flex-wrap:wrap}
+.sample input{
+  flex:1;min-width:220px;padding:15px 18px;border-radius:50px;border:none;font-size:1rem;font-family:'Nunito';font-weight:700
+}
+.sample .note{font-size:.82rem;color:#cdf3f8;margin-top:10px}
+.sample-card{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.25);border-radius:var(--radius);padding:26px;text-align:center;backdrop-filter:blur(4px)}
+.sample-card .big-emoji{font-size:2.6rem}
+.sample-card h3{margin:8px 0 6px;font-size:1.3rem}
+
+/* ---------- Partnerships ---------- */
+.partners{background:var(--sage-soft);text-align:center}
+.partners .row{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:36px}
+.pcard{background:var(--paper);border-radius:var(--radius);padding:30px 24px;box-shadow:var(--shadow);border:1px solid var(--line)}
+.pcard .pi{width:56px;height:56px;border-radius:15px;margin:0 auto 14px;display:flex;align-items:center;justify-content:center}
+.pcard h3{color:var(--forest);font-size:1.2rem;margin-bottom:8px}
+.pcard p{color:var(--ink-soft);font-size:.95rem}
+
+/* ---------- Footer ---------- */
+footer.site{background:var(--forest-deep);color:#cfe9d6;padding:56px 0 24px}
+.foot-grid{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:32px}
+.foot-brand .brand{color:#fff;margin-bottom:12px}
+.foot-brand p{font-size:.95rem;color:#a9cfb4;max-width:34ch}
+.foot-col h4{color:#fff;font-size:1rem;margin-bottom:14px;letter-spacing:.02em}
+.foot-col a{display:block;color:#a9cfb4;font-weight:600;font-size:.93rem;padding:4px 0;transition:.15s}
+.foot-col a:hover{color:var(--gold)}
+.socials{display:flex;gap:12px;margin-top:16px}
+.socials a{width:38px;height:38px;border-radius:10px;background:rgba(255,255,255,.1);display:flex;align-items:center;justify-content:center;color:#fff}
+.socials a:hover{background:var(--gold);color:var(--forest-deep)}
+.foot-bottom{border-top:1px solid rgba(255,255,255,.14);margin-top:38px;padding-top:20px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:.85rem;color:#8fbb9c}
+.foot-bottom a{color:#8fbb9c}
+.foot-bottom a:hover{color:var(--gold)}
+
+/* ---------- Cart drawer ---------- */
+.overlay{position:fixed;inset:0;background:rgba(14,45,29,.5);opacity:0;pointer-events:none;transition:.25s;z-index:90}
+.overlay.open{opacity:1;pointer-events:auto}
+.drawer{
+  position:fixed;top:0;right:0;height:100%;width:400px;max-width:92vw;background:var(--cream);
+  z-index:100;box-shadow:-10px 0 40px rgba(0,0,0,.2);transform:translateX(100%);transition:transform .28s ease;
+  display:flex;flex-direction:column
+}
+.drawer.open{transform:translateX(0)}
+.drawer-head{display:flex;align-items:center;justify-content:space-between;padding:20px 22px;border-bottom:1px solid var(--line);background:var(--forest);color:#fff}
+.drawer-head h3{font-size:1.2rem;font-family:'Fraunces';font-weight:600}
+.drawer-body{flex:1;overflow-y:auto;padding:18px 22px}
+.cart-empty{text-align:center;color:var(--ink-soft);padding:50px 10px}
+.cart-empty .big-emoji{font-size:2.4rem;margin-bottom:10px}
+.cart-item{display:flex;gap:12px;padding:14px 0;border-bottom:1px solid var(--line)}
+.cart-item .ci-thumb{width:60px;height:60px;border-radius:12px;flex:none;overflow:hidden;background:var(--sage-soft)}
+.cart-item .ci-thumb > svg{width:100%;height:100%}
+.cart-item .ci-info{flex:1}
+.cart-item .ci-info b{font-size:.96rem;color:var(--forest-deep);display:block;line-height:1.25}
+.cart-item .ci-info .ci-price{color:var(--ink-soft);font-weight:700;font-size:.88rem}
+.qty{display:inline-flex;align-items:center;gap:8px;margin-top:6px}
+.qty button{width:26px;height:26px;border-radius:8px;border:1px solid var(--line);background:#fff;cursor:pointer;font-weight:900;color:var(--forest);font-size:1rem;line-height:1}
+.qty span{font-weight:800;min-width:20px;text-align:center}
+.ci-remove{background:none;border:none;color:var(--coral);font-weight:700;font-size:.8rem;cursor:pointer;margin-top:4px}
+.drawer-foot{padding:20px 22px;border-top:1px solid var(--line);background:var(--paper)}
+.subtotal{display:flex;justify-content:space-between;font-weight:900;font-size:1.15rem;color:var(--forest-deep);margin-bottom:6px}
+.drawer-foot .ship-note{font-size:.82rem;color:var(--ink-soft);margin-bottom:14px}
+.drawer-foot .btn{width:100%;justify-content:center}
+
+/* ---------- Toast ---------- */
+.toast{
+  position:fixed;bottom:24px;left:50%;transform:translateX(-50%) translateY(120px);
+  background:var(--forest-deep);color:#fff;padding:14px 22px;border-radius:50px;font-weight:800;
+  box-shadow:var(--shadow-lg);z-index:120;transition:transform .3s ease;font-size:.95rem
+}
+.toast.show{transform:translateX(-50%) translateY(0)}
+
+/* ---------- Responsive ---------- */
+@media(max-width:960px){
+  .hero .wrap{grid-template-columns:1fr;gap:30px}
+  .hero p.lead{max-width:none}
+  .values-strip .wrap{grid-template-columns:1fr 1fr}
+  .col-grid{grid-template-columns:1fr 1fr}
+  .princ-grid{grid-template-columns:1fr 1fr 1fr}
+  .whole .wrap,.sample .wrap{grid-template-columns:1fr}
+  .testi-grid,.partners .row{grid-template-columns:1fr}
+  .foot-grid{grid-template-columns:1fr 1fr}
+  .nav-links{display:none}
+  .menu-toggle{display:inline-flex}
+}
+@media(max-width:560px){
+  .col-grid,.princ-grid{grid-template-columns:1fr}
+  .values-strip .wrap{grid-template-columns:1fr}
+  .foot-grid{grid-template-columns:1fr}
+  .trustbar .wrap{gap:16px;font-size:.76rem}
+  .domains{grid-template-columns:1fr}
+}
+
+/* ---------- Enhancement layer ---------- */
+.skip-link{
+  position:fixed;left:16px;top:12px;z-index:200;
+  background:var(--forest-deep);color:#fff;padding:10px 14px;border-radius:10px;
+  transform:translateY(-180%);transition:transform .18s ease;font-weight:800;
+}
+.skip-link:focus{transform:translateY(0)}
+:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+body.no-scroll{overflow:hidden}
+.nav-links.mobile-open{
+  display:flex!important;position:absolute;top:100%;left:0;right:0;
+  flex-direction:column;background:#fff;padding:14px 22px 20px;
+  box-shadow:var(--shadow);gap:4px;border-bottom:1px solid var(--line)
+}
+.nav-links.mobile-open a{padding:11px 4px}
+.filter-row{
+  display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin:-14px 0 28px
+}
+.filter-btn{
+  border:1px solid var(--line);background:var(--paper);color:var(--forest);
+  border-radius:999px;padding:9px 15px;font:800 .88rem 'Nunito';cursor:pointer
+}
+.filter-btn.active,.filter-btn:hover{background:var(--forest);color:#fff;border-color:var(--forest)}
+.search-panel{
+  position:fixed;inset:0;z-index:115;background:rgba(14,45,29,.64);
+  display:none;align-items:flex-start;justify-content:center;padding:90px 18px 18px
+}
+.search-panel.open{display:flex}
+.search-box{
+  width:min(680px,100%);background:var(--paper);border-radius:24px;padding:22px;
+  box-shadow:var(--shadow-lg)
+}
+.search-box-head{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.search-box input{
+  width:100%;margin-top:16px;padding:14px 16px;border:2px solid var(--line);
+  border-radius:14px;font:700 1rem 'Nunito'
+}
+.search-results{margin-top:14px;display:grid;gap:8px}
+.search-result{
+  display:flex;justify-content:space-between;gap:16px;align-items:center;
+  border:1px solid var(--line);border-radius:14px;padding:12px 14px;background:var(--cream)
+}
+.search-result button{flex:none}
+.launch-proof{
+  display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:30px
+}
+.proof-card{
+  background:#ffffff;border:1px solid var(--line);
+  border-radius:16px;padding:16px;box-shadow:var(--shadow)
+}
+.proof-card b{display:block;color:var(--forest-deep);font-size:1rem}
+.proof-card span{display:block;color:var(--ink-soft);font-size:.86rem;margin-top:4px}
+.faq-grid{max-width:850px;margin:0 auto;display:grid;gap:12px}
+.faq-item{
+  background:var(--paper);border:1px solid var(--line);border-radius:16px;overflow:hidden
+}
+.faq-q{
+  width:100%;display:flex;justify-content:space-between;gap:16px;align-items:center;
+  border:0;background:transparent;padding:18px 20px;text-align:left;
+  color:var(--forest-deep);font:800 1rem 'Nunito';cursor:pointer
+}
+.faq-a{display:none;padding:0 20px 18px;color:var(--ink-soft)}
+.faq-item.open .faq-a{display:block}
+.faq-item.open .faq-plus{transform:rotate(45deg)}
+.faq-plus{font-size:1.4rem;transition:transform .16s ease}
+.pilot-band{
+  margin-top:28px;background:var(--gold-soft);border:1px solid #efd693;
+  border-radius:var(--radius);padding:22px;display:flex;justify-content:space-between;
+  align-items:center;gap:18px;flex-wrap:wrap
+}
+.pilot-band h3{color:var(--forest-deep)}
+.pilot-band p{color:var(--ink-soft);margin-top:4px}
+.form-status{margin-top:12px;font-weight:800;color:#fff;min-height:24px}
+.testi .who{display:none}
+.testi .stars{display:none}
+.testi::before{
+  content:"The gap";display:inline-block;background:var(--gold-soft);color:#6e4b09;
+  border-radius:999px;padding:5px 10px;font-weight:900;font-size:.72rem;
+  text-transform:uppercase;letter-spacing:.08em;margin-bottom:10px
+}
+.cart-progress{height:8px;border-radius:999px;background:var(--sage);overflow:hidden;margin-bottom:10px}
+.cart-progress span{display:block;height:100%;background:var(--forest-bright);width:0;transition:width .2s ease}
+@media(max-width:960px){
+  .launch-proof{grid-template-columns:1fr}
+}
+@media(max-width:560px){
+  .search-panel{padding-top:72px}
+  .search-result{align-items:flex-start;flex-direction:column}
+}
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
+}
+
+
+.product-photo{
+  width:100%;height:100%;object-fit:cover;object-position:center top;display:block;background:#fbf6ec;
+}
+.ecosystem{
+  background:var(--paper);
+}
+.ecosystem-grid{
+  display:grid;grid-template-columns:1.1fr .9fr;gap:34px;align-items:center;
+}
+.ecosystem-visual{
+  border-radius:var(--radius);overflow:hidden;border:1px solid var(--line);box-shadow:var(--shadow-lg);
+}
+.ecosystem-visual img{width:100%;height:auto;display:block}
+.ecosystem-points{display:grid;gap:14px;margin-top:20px}
+.ecosystem-point{
+  display:flex;gap:12px;align-items:flex-start;background:var(--sage-soft);
+  border:1px solid var(--line);border-radius:16px;padding:15px 16px;
+}
+.ecosystem-point b{display:block;color:var(--forest-deep)}
+.ecosystem-point span{display:block;color:var(--ink-soft);font-size:.92rem;margin-top:3px}
+.product-note{
+  margin-top:24px;background:var(--gold-soft);border:1px solid #efd693;border-radius:16px;padding:18px 20px;
+  color:var(--ink-soft);font-size:.95rem
+}
+.product-note b{color:var(--forest-deep)}
+@media(max-width:960px){.ecosystem-grid{grid-template-columns:1fr}}
+
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<!-- Sprout logomark reused via <use> -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="sprout" viewBox="0 0 48 48">
+    <path d="M24 44V22" stroke="#f6b53c" stroke-width="3.5" stroke-linecap="round"/>
+    <path d="M24 26C24 18 18 12 9 12c0 8 6 14 15 14Z" fill="#1f8a54"/>
+    <path d="M24 22C24 15 29 9 38 9c0 7-6 13-14 13Z" fill="#1fa5b8"/>
+    <circle cx="24" cy="17" r="4.2" fill="#ef6a52"/>
+  </symbol>
+  <!-- Primary brand mark: rising sun + cross over an open book -->
+  <symbol id="ff-logo" viewBox="0 0 64 60">
+    <g stroke="#f0a830" stroke-width="2.6" stroke-linecap="round">
+      <line x1="32" y1="1.5" x2="32" y2="8"/>
+      <line x1="20.5" y1="4.5" x2="23" y2="10"/>
+      <line x1="43.5" y1="4.5" x2="41" y2="10"/>
+      <line x1="11.5" y1="12.5" x2="16" y2="16"/>
+      <line x1="52.5" y1="12.5" x2="48" y2="16"/>
+      <line x1="6.5" y1="23" x2="12" y2="24.5"/>
+      <line x1="57.5" y1="23" x2="52" y2="24.5"/>
+    </g>
+    <circle cx="32" cy="23" r="12.5" fill="#f0a830"/>
+    <rect x="30.1" y="14.5" width="3.8" height="17" rx="1.2" fill="#fff"/>
+    <rect x="26" y="20.2" width="12" height="3.8" rx="1.2" fill="#fff"/>
+    <path d="M32 35C24 31 14 31 6 34L6 48C14 45 24 45 32 49Z" fill="#e2673a"/>
+    <path d="M32 35C40 31 50 31 58 34L58 48C50 45 40 45 32 49Z" fill="#38b6bd"/>
+    <path d="M32 38C24.5 34.3 15.5 34.3 8.5 37L8.5 49.5C15.5 46.8 24.5 46.8 32 50.5Z" fill="#fff" stroke="#10254a" stroke-width="1.8" stroke-linejoin="round"/>
+    <path d="M32 38C39.5 34.3 48.5 34.3 55.5 37L55.5 49.5C48.5 46.8 39.5 46.8 32 50.5Z" fill="#fff" stroke="#10254a" stroke-width="1.8" stroke-linejoin="round"/>
+    <line x1="32" y1="38" x2="32" y2="50.5" stroke="#10254a" stroke-width="1.8"/>
+  </symbol>
+</svg>
+
+<!-- ============ TRUST BAR ============ -->
+<div class="trustbar">
+  <div class="wrap">
+    <span><svg width="14" height="14" viewBox="0 0 48 48"><use href="#sprout"/></svg> Free Shipping on Orders $75+</span>
+    <span><svg width="14" height="14" viewBox="0 0 48 48"><use href="#sprout"/></svg> Ships in 2–3 Business Days</span>
+    <span><svg width="14" height="14" viewBox="0 0 48 48"><use href="#sprout"/></svg> 30-Day Satisfaction Guarantee</span>
+  </div>
+</div>
+
+<!-- ============ HEADER ============ -->
+<header class="site">
+  <nav class="nav">
+    <a href="#top" class="brand" aria-label="First Fruits home">
+      <svg class="logomark" viewBox="0 0 64 60"><use href="#ff-logo"/></svg>
+      <span class="wordmark"><span class="wm-first">First</span> <span class="wm-fruits"><span>F</span><span>r</span><span>u</span><span>i</span><span>t</span><span>s</span></span></span>
+    </a>
+    <div class="nav-links" id="primaryNav">
+      <a href="#shop">Shop</a>
+      <a href="#plans">Plans</a>
+      <a href="#whole">Our Method</a>
+      <a href="#partners">Churches &amp; Schools</a>
+      <a href="what-we-believe.html">What We Believe</a>
+      <a href="#about">About</a>
+    </div>
+    <div class="nav-tools">
+      <button class="icon-btn" id="searchOpen" aria-label="Search products" aria-haspopup="dialog">
+        <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3" stroke-linecap="round"/></svg>
+      </button>
+      <button class="icon-btn cart-btn" onclick="openCart()" aria-label="Cart">
+        <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><path d="M6 6h15l-1.5 9h-12z" stroke-linejoin="round"/><path d="M6 6L5 2H2" stroke-linecap="round"/><circle cx="9" cy="20" r="1.6"/><circle cx="18" cy="20" r="1.6"/></svg>
+        <span class="cart-count" id="cartCount" style="display:none">0</span>
+      </button>
+      <button class="icon-btn menu-toggle" id="menuToggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="primaryNav">
+        <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.4" viewBox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18" stroke-linecap="round"/></svg>
+      </button>
+    </div>
+  </nav>
+</header>
+
+<span id="top"></span>
+<main id="main">
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <div class="eyebrow">Faith-Based K–2 Learning Portfolio</div>
+      <h1 class="serif">Nurturing minds,<br><em>rooted in Truth.</em></h1>
+      <p class="lead">Scripture-integrated learning that develops the whole child — spiritually, academically, and emotionally — during the most formative years of their lives.</p>
+      <div class="cta-row">
+        <a href="#shop" class="btn btn-coral">Shop the 365 Day Portfolio</a>
+        <a href="#sample" class="btn btn-ghost">Get a Free Sample Pack</a>
+      </div>
+      <div class="social-proof">
+        <span class="stars">★★★★★</span>
+        <span>Built for homeschool families, churches &amp; Christian schools</span>
+      </div>
+      <div class="launch-proof" aria-label="Launch highlights">
+        <div class="proof-card"><b>5-day free sample</b><span>Preview the teaching style before buying.</span></div>
+        <div class="proof-card"><b>Print and digital</b><span>Use the format that fits your family or classroom.</span></div>
+        <div class="proof-card"><b>Founding-family pilot</b><span>Help shape the first complete release.</span></div>
+      </div>
+
+    </div>
+    <div class="hero-art">
+      <div class="hero-badge">365 Days<small>Print + Digital</small></div>
+      <div class="hero-card">
+        <img src="first-fruits-assets/first-fruits-product-ecosystem.jpg" alt="First Fruits digital units, workbooks, activity kits, and teacher resources" style="width:100%;border-radius:16px">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ VALUE STRIP ============ -->
+<div class="values-strip">
+  <div class="wrap">
+    <div class="value"><span class="vic">✝</span> Gospel-centered content</div>
+    <div class="value"><span class="vic">✎</span> Hands-on &amp; multi-sensory</div>
+    <div class="value"><span class="vic">★</span> Aligned to national standards</div>
+    <div class="value"><span class="vic">♥</span> Built by faith-driven educators</div>
+  </div>
+</div>
+
+<!-- ============ COLLECTIONS ============ -->
+<section class="block collections" id="collections">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">Shop by Grade</div>
+      <h2 class="serif">One cohesive system, Pre-K through 2nd</h2>
+      <p>A whole-child portfolio that grows with your learner — building both academic foundations and biblical identity, one day at a time.</p>
+    </div>
+    <div class="col-grid">
+      <a href="#shop" class="col-card">
+        <div class="col-emoji" style="background:var(--gold-soft)">
+          <svg width="34" height="34" fill="none" stroke="#f6b53c" stroke-width="2.4" viewBox="0 0 24 24"><path d="M12 3l2.4 5 5.6.6-4.2 3.7 1.3 5.7L12 15l-5.1 3 1.3-5.7L4 8.6 9.6 8z" stroke-linejoin="round"/></svg>
+        </div>
+        <h3>Pre-K</h3><span>Ages 4–5 · Readiness</span>
+      </a>
+      <a href="#shop" class="col-card">
+        <div class="col-emoji" style="background:var(--teal-soft)">
+          <svg width="34" height="34" fill="none" stroke="#1fa5b8" stroke-width="2.4" viewBox="0 0 24 24"><path d="M4 6h7v13H4zM13 6h7v13h-7z" stroke-linejoin="round"/><path d="M11 6v13M13 6v13"/></svg>
+        </div>
+        <h3>Kindergarten</h3><span>Phonics &amp; discipleship</span>
+      </a>
+      <a href="#shop" class="col-card">
+        <div class="col-emoji" style="background:var(--coral-soft)">
+          <svg width="34" height="34" fill="none" stroke="#ef6a52" stroke-width="2.4" viewBox="0 0 24 24"><path d="M12 3v18M5 8l7-4 7 4M5 8v8l7 4 7-4V8" stroke-linejoin="round"/></svg>
+        </div>
+        <h3>1st Grade</h3><span>Reading &amp; character</span>
+      </a>
+      <a href="#shop" class="col-card">
+        <div class="col-emoji" style="background:var(--sage)">
+          <svg width="34" height="34" fill="none" stroke="#14663f" stroke-width="2.4" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 4-6 8-6s8 2 8 6" stroke-linecap="round"/></svg>
+        </div>
+        <h3>2nd Grade</h3><span>Fluency &amp; leadership</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============ PRODUCT ECOSYSTEM ============ -->
+<section class="block ecosystem" id="ecosystem">
+  <div class="wrap">
+    <div class="ecosystem-grid">
+      <div class="ecosystem-visual">
+        <img src="first-fruits-assets/first-fruits-product-ecosystem.jpg" alt="First Fruits K–2 curriculum ecosystem showing digital lessons, workbooks, Bible activity packs, materials kits, and teacher resources">
+      </div>
+      <div>
+        <div class="eyebrow">The First Fruits Product System</div>
+        <h2 class="serif">One lesson. Multiple ways to learn.</h2>
+        <p class="big" style="margin-top:14px;color:var(--ink-soft)">Every theme can be delivered digitally, printed on demand, taught hands on, and adapted for a family, classroom, church, or co-op.</p>
+        <div class="ecosystem-points">
+          <div class="ecosystem-point"><span class="ck">✓</span><div><b>Standards aligned by design</b><span>Each academic objective maps to national early learning benchmarks while Scripture shapes the purpose and application.</span></div></div>
+          <div class="ecosystem-point"><span class="ck">✓</span><div><b>Visual, auditory, and kinesthetic</b><span>Stories, songs, discussion prompts, movement, manipulatives, and printable practice work together instead of competing.</span></div></div>
+          <div class="ecosystem-point"><span class="ck">✓</span><div><b>Materials without the scavenger hunt</b><span>Families and teachers can buy an optional activity kit containing the specialty supplies used in the unit.</span></div></div>
+          <div class="ecosystem-point"><span class="ck">✓</span><div><b>Built to scale responsibly</b><span>Digital delivery and print on demand reduce inventory risk while church and school licenses expand reach.</span></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ LAUNCH SPOTLIGHT ============ -->
+<section class="block spotlight" id="launch">
+  <div class="wrap">
+    <div>
+      <div class="eyebrow">Our First Unit · Coming to Launch</div>
+      <h2 class="serif">Who I Am <em>in Christ</em></h2>
+      <p class="lead">Identity is the foundation everything else is built on. Our launch unit weaves Scripture declarations, social-emotional learning, and reading &amp; language arts into who your child is — their worth, their behaviors, and their motivations — rooted in Christ.</p>
+      <div class="spot-tags">
+        <span>✝ Scripture declarations</span>
+        <span>♥ Social-emotional</span>
+        <span>✎ Reading &amp; language arts</span>
+        <span>★ National-standards aligned</span>
+        <span>📦 Materials kit option</span>
+      </div>
+      <div class="cta-row" style="display:flex;gap:14px;flex-wrap:wrap">
+        <button class="btn btn-gold" onclick="addToCart('identity')">Add the Identity Unit</button>
+        <a href="#sample" class="btn" style="background:rgba(255,255,255,.15);color:#fff;border:2px solid rgba(255,255,255,.35)">Join the Launch List</a>
+      </div>
+    </div>
+    <div class="spot-card">
+      <div class="thumb" id="spotArt"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ INSIDE THE UNIT ============ -->
+<section class="block inside" id="inside">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">Inside Every Unit</div>
+      <h2 class="serif">Four ways every theme comes to life</h2>
+      <p>Each thematic unit teaches across four connected areas — so faith, academics, and character grow together. Try a free downloadable sample of each.</p>
+    </div>
+    <div class="inside-grid">
+      <div class="inside-card">
+        <div class="ii" style="background:var(--coral-soft)"><svg width="26" height="26" fill="none" stroke="#ef6a52" stroke-width="2.3" viewBox="0 0 24 24"><path d="M12 21s-7-4.6-7-10a4 4 0 017-2.7A4 4 0 0119 11c0 5.4-7 10-7 10z"/></svg></div>
+        <h4>Social-Emotional</h4>
+        <p>Identity, feelings, and character rooted in who children are in Christ.</p>
+        <a onclick="showToast('Free sample — join the launch list 🌱')">Download sample →</a>
+      </div>
+      <div class="inside-card">
+        <div class="ii" style="background:var(--gold-soft)"><svg width="26" height="26" fill="none" stroke="#f6b53c" stroke-width="2.3" viewBox="0 0 24 24"><path d="M5 3h14v18H5z"/><path d="M9 7h6M9 11h6M9 15h3"/></svg></div>
+        <h4>Math</h4>
+        <p>Numbers, counting, and problem-solving built to national standards.</p>
+        <a onclick="showToast('Free sample — join the launch list 🌱')">Download sample →</a>
+      </div>
+      <div class="inside-card">
+        <div class="ii" style="background:var(--teal-soft)"><svg width="26" height="26" fill="none" stroke="#1fa5b8" stroke-width="2.3" viewBox="0 0 24 24"><path d="M4 5h16v14H4z"/><path d="M12 5v14M7 9h2M7 12h2M15 9h2M15 12h2"/></svg></div>
+        <h4>Reading Comprehension</h4>
+        <p>Stories and questions that build understanding and a love of reading.</p>
+        <a onclick="showToast('Free sample — join the launch list 🌱')">Download sample →</a>
+      </div>
+      <div class="inside-card">
+        <div class="ii" style="background:var(--sage)"><svg width="26" height="26" fill="none" stroke="#14663f" stroke-width="2.3" viewBox="0 0 24 24"><path d="M4 7h16M4 12h10M4 17h16"/><circle cx="18" cy="12" r="2"/></svg></div>
+        <h4>Phonics</h4>
+        <p>Letter sounds, blends, and handwriting for confident early readers.</p>
+        <a onclick="showToast('Free sample — join the launch list 🌱')">Download sample →</a>
+      </div>
+    </div>
+    <p class="placeholder-note">Our MVP launches with one grade level, with a sample from each category — so you can see the whole method before you commit.</p>
+  </div>
+</section>
+
+<!-- ============ PRODUCTS ============ -->
+<section class="block" id="shop">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">The Portfolio &amp; Expansion Packs</div>
+      <h2 class="serif">Everything you need to teach faith &amp; academics</h2>
+      <p>Start with the 365 Day Learning Portfolio, then build on it with monthly expansion packs and hands-on activity kits.</p>
+    </div>
+    
+    <div class="filter-row" aria-label="Filter products">
+      <button class="filter-btn active" type="button" data-filter="all">All products</button>
+      <button class="filter-btn" type="button" data-filter="unit">Thematic Units</button>
+      <button class="filter-btn" type="button" data-filter="physical">Physical</button>
+      <button class="filter-btn" type="button" data-filter="digital">Digital</button>
+      <button class="filter-btn" type="button" data-filter="classroom">Classroom & Ministry</button>
+    </div>
+
+    <div class="prod-grid" id="prodGrid"><!-- injected by JS --></div>
+
+    <div class="product-note">
+      <b>Launch recommendation:</b> lead with the three digital thematic units, the materials kit, and the free sample. Keep the full 365 Day Binder and subscriptions visible as the long-term system, but do not make the first customer understand the entire future company before buying the first useful product.
+    </div>
+
+  </div>
+</section>
+
+<!-- ============ MEMBERSHIP PLANS ============ -->
+<section class="block plans" id="plans">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">Membership Plans</div>
+      <h2 class="serif">A plan for every home, class &amp; ministry</h2>
+      <p>Unlimited access to weekly lessons, digital media, and printables — updated all year long. Cancel anytime.</p>
+    </div>
+    <div class="plan-grid">
+      <div class="plan featured">
+        <span class="tag">Most Popular</span>
+        <div class="pico" style="background:var(--gold-soft)"><svg width="26" height="26" fill="none" stroke="#f6b53c" stroke-width="2.3" viewBox="0 0 24 24"><path d="M12 3l2 5 5 .5-4 3.5 1.2 5L12 14l-4.2 3 1.2-5-4-3.5 5-.5z"/></svg></div>
+        <h3>Seed</h3>
+        <div class="aud">For Families</div>
+        <div class="cost">$12.99<small>/mo</small></div>
+        <div class="sub">or $119/year — save 25%</div>
+        <ul>
+          <li>All children in one household</li>
+          <li>Weekly lessons &amp; digital media</li>
+          <li>Printable activity sheets</li>
+          <li>Memory verse trackers</li>
+          <li>Parent monitoring dashboard</li>
+        </ul>
+        <button class="btn btn-coral" onclick="showToast('Demo store — memberships open at launch 🌱')">Start Seed Plan</button>
+      </div>
+
+      <div class="plan">
+        <div class="pico" style="background:var(--teal-soft)"><svg width="26" height="26" fill="none" stroke="#1fa5b8" stroke-width="2.3" viewBox="0 0 24 24"><path d="M4 6h16v11H4z"/><path d="M8 21h8M12 17v4"/></svg></div>
+        <h3>Harvest</h3>
+        <div class="aud">For Educators</div>
+        <div class="cost">$29.99<small>/mo</small></div>
+        <div class="sub">Classrooms up to 30 students</div>
+        <ul>
+          <li>Full lesson plans</li>
+          <li>Printable student assignments</li>
+          <li>Interactive learning modules</li>
+          <li>Classroom admin tools</li>
+        </ul>
+        <button class="btn btn-forest" onclick="showToast('Demo store — memberships open at launch 🌱')">Choose Harvest</button>
+      </div>
+
+      <div class="plan">
+        <div class="pico" style="background:var(--sage)"><svg width="26" height="26" fill="none" stroke="#14663f" stroke-width="2.3" viewBox="0 0 24 24"><path d="M12 2l8 5v14H4V7z"/><path d="M12 2v5M9 21v-5h6v5"/></svg></div>
+        <h3>Church Ministry</h3>
+        <div class="aud">For Ministries</div>
+        <div class="cost">$59.99<small>/mo</small></div>
+        <div class="sub">Sunday school, VBS &amp; more</div>
+        <ul>
+          <li>Multi-user volunteer access</li>
+          <li>Customizable ministry curricula</li>
+          <li>Seasonal event kits</li>
+          <li>Children’s ministry resources</li>
+        </ul>
+        <button class="btn btn-forest" onclick="showToast('Demo store — memberships open at launch 🌱')">Choose Ministry</button>
+      </div>
+
+      <div class="plan">
+        <div class="pico" style="background:var(--coral-soft)"><svg width="26" height="26" fill="none" stroke="#ef6a52" stroke-width="2.3" viewBox="0 0 24 24"><path d="M3 21h18M5 21V9l7-5 7 5v12M9 21v-5h6v5"/></svg></div>
+        <h3>School</h3>
+        <div class="aud">Enterprise</div>
+        <div class="cost">$299<small>/mo</small></div>
+        <div class="sub">Multi-classroom site license</div>
+        <ul>
+          <li>Site-wide resource access</li>
+          <li>Administrative oversight</li>
+          <li>Multi-classroom deployment</li>
+          <li>Priority partner support</li>
+        </ul>
+        <button class="btn btn-ghost" onclick="showToast('Demo store — request a licensing packet 🌱')">Contact Sales</button>
+      </div>
+    </div>
+
+    <div class="enterprise">
+      <div>
+        <h3>Institutional licensing for larger deployments</h3>
+        <p>Custom annual contracts for districts and multi-site church networks.</p>
+      </div>
+      <div class="tiers">
+        <div><span>$2,500/yr</span><small>Up to 100 students</small></div>
+        <div><span>$8,000/yr</span><small>Up to 500 students</small></div>
+        <div><span>$15,000+/yr</span><small>1,000+ students</small></div>
+      </div>
+    </div>
+  
+    <div class="pilot-band">
+      <div>
+        <h3>Not ready for a membership yet?</h3>
+        <p>Join the founding-family pilot and test the first unit before committing to a plan.</p>
+      </div>
+      <a href="#sample" class="btn btn-coral">Apply for Early Access</a>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============ MISSION BAND ============ -->
+<section class="block mission">
+  <div class="wrap">
+    <div class="eyebrow">Our Heart</div>
+    <p class="verse">“Train up a child in the way he should go; even when he is old he will not depart from it.”</p>
+    <div class="cite">— Proverbs 22:6</div>
+    <p class="stmt">We help parents, churches, and Christian schools build strong biblical and educational foundations in children by providing engaging, Scripture-integrated learning portfolios — so they can raise confident, capable, and Christ-centered future leaders.</p>
+  </div>
+</section>
+
+<!-- ============ WHOLE CHILD / METHOD ============ -->
+<section class="block whole" id="whole">
+  <div class="wrap">
+    <div>
+      <div class="eyebrow">Our Method</div>
+      <h2 class="serif">More than Bible verses on a worksheet</h2>
+      <p class="big">We intentionally integrate Scripture, child development, and academic standards into one cohesive discipleship system for the whole child — with hands-on, multi-sensory lessons that engage every learning style.</p>
+      <div class="check-list">
+        <div class="check-item"><span class="ck">✓</span> Aligned to national standards — one umbrella that works in any state</div>
+        <div class="check-item"><span class="ck">✓</span> Engages every learning style: visual, auditory, and kinesthetic</div>
+        <div class="check-item"><span class="ck">✓</span> Optional materials kit ships every supply — no scavenger hunt for parents</div>
+        <div class="check-item"><span class="ck">✓</span> Strengthens the parent-child relationship, not just academics</div>
+      </div>
+    </div>
+    <div class="domains">
+      <div class="domain">
+        <div class="di" style="background:var(--sage)"><svg width="24" height="24" fill="none" stroke="#14663f" stroke-width="2.3" viewBox="0 0 24 24"><path d="M12 21s-7-4.6-7-10a4 4 0 017-2.7A4 4 0 0119 11c0 5.4-7 10-7 10z"/></svg></div>
+        <h4>Spiritual</h4><p>Scripture memory, prayer, and character rooted in the Gospel.</p>
+      </div>
+      <div class="domain">
+        <div class="di" style="background:var(--teal-soft)"><svg width="24" height="24" fill="none" stroke="#1fa5b8" stroke-width="2.3" viewBox="0 0 24 24"><path d="M4 5h16v12H4z"/><path d="M4 17l4 3M20 17l-4 3"/></svg></div>
+        <h4>Academic</h4><p>Phonics, handwriting, math, and reading fluency built to standard.</p>
+      </div>
+      <div class="domain">
+        <div class="di" style="background:var(--coral-soft)"><svg width="24" height="24" fill="none" stroke="#ef6a52" stroke-width="2.3" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M8 14s1.5 2 4 2 4-2 4-2M9 9h.01M15 9h.01"/></svg></div>
+        <h4>Emotional</h4><p>Fruit-of-the-Spirit routines that grow confidence and kindness.</p>
+      </div>
+      <div class="domain">
+        <div class="di" style="background:var(--gold-soft)"><svg width="24" height="24" fill="none" stroke="#f6b53c" stroke-width="2.3" viewBox="0 0 24 24"><path d="M12 3l2 4 4 4-4 4-2 4-2-4-4-4 4-4z"/></svg></div>
+        <h4>Hands-On</h4><p>Multi-sensory activities that reach visual, auditory &amp; kinesthetic learners.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PRINCIPLES ============ -->
+<section class="block" id="values">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">What We Stand For</div>
+      <h2 class="serif">Five values in every page we make</h2>
+    </div>
+    <div class="princ-grid">
+      <div class="princ"><div class="pn" style="background:var(--forest)">1</div><h4>Faith First</h4><p>Every activity points children toward Christ.</p></div>
+      <div class="princ"><div class="pn" style="background:var(--teal)">2</div><h4>Whole Child</h4><p>Spiritual, academic, and emotional growth together.</p></div>
+      <div class="princ"><div class="pn" style="background:var(--coral)">3</div><h4>Hands-On</h4><p>Experiential, multi-sensory learning.</p></div>
+      <div class="princ"><div class="pn" style="background:var(--gold);color:#4a3512">4</div><h4>Family-Centered</h4><p>Discipleship that draws families closer.</p></div>
+      <div class="princ"><div class="pn" style="background:var(--forest-bright)">5</div><h4>Excellence</h4><p>Aligned to national academic standards.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TESTIMONIALS ============ -->
+<section class="block" style="background:var(--sage-soft)">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">Designed Around Real Family Needs</div>
+      <h2 class="serif">The problems First Fruits is built to solve</h2>
+    </div>
+    <div class="testi-grid">
+      <div class="testi">
+        <p>Families should not have to choose between strong academics and Christ-centered formation. First Fruits is designed to bring both into one daily rhythm.</p>
+      </div>
+      <div class="testi">
+        <p>Teachers need lessons that are clear, repeatable, and easy to prepare. Optional materials kits reduce planning friction and keep hands-on learning realistic.</p>
+      </div>
+      <div class="testi">
+        <p>Parents want character formation to move beyond memorization. Each unit connects Scripture to language, choices, routines, and relationships.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SAMPLE / EMAIL ============ -->
+<section class="block sample" id="sample">
+  <div class="wrap">
+    <div>
+      <div class="eyebrow" style="color:#cdf3f8">Founding Families · Early Access</div>
+      <h2 class="serif">Join our launch pilot</h2>
+      <p>We're inviting a first group of homeschool families, co-ops, and churches to try the curriculum, shape it with your feedback, and get founding-family perks. Test it risk-free and share a review after 30 days. Start with a free 5-day printable sample and we'll keep you posted on launch.</p>
+      <form onsubmit="return submitEmail(event)">
+        <input type="email" id="emailInput" placeholder="you@email.com" required aria-label="Email address" />
+        <button type="submit" class="btn btn-gold">Send My Sample</button>
+      </form>
+      <p class="note">No spam, ever. Unsubscribe anytime. 30-day satisfaction guarantee on all products.</p><div class="form-status" id="formStatus" role="status" aria-live="polite"></div>
+    </div>
+    <div class="sample-card">
+      <div class="big-emoji">📥</div>
+      <h3 class="serif">5-Day Printable Sample</h3>
+      <p style="color:#e5fbff">A memory-verse copywork page, a phonics worksheet, a Fruit of the Spirit activity, and a monthly tracker — free.</p>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============ FAQ ============ -->
+<section class="block" id="faq">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">Common Questions</div>
+      <h2 class="serif">Know what you are getting before you buy</h2>
+      <p>Clear answers for families, churches, co-ops, and Christian schools.</p>
+    </div>
+    <div class="faq-grid">
+      <div class="faq-item">
+        <button class="faq-q" type="button" aria-expanded="false"><span>Is this a complete homeschool curriculum?</span><span class="faq-plus">+</span></button>
+        <div class="faq-a">The launch unit is a focused thematic learning experience. The full 365 Day Portfolio is being built as the broader K–2 system. Product pages should clearly identify which subjects and weeks are included.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" type="button" aria-expanded="false"><span>Which Bible translation do you use?</span><span class="faq-plus">+</span></button>
+        <div class="faq-a">The final product should state the default translation and whether alternate verse cards are available. This is a launch decision that should be made before checkout goes live.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" type="button" aria-expanded="false"><span>What is included in the materials kit?</span><span class="faq-plus">+</span></button>
+        <div class="faq-a">Every consumable or specialty item needed for the selected unit, packed by activity. Common household tools such as pencils, scissors, and crayons can be listed separately.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" type="button" aria-expanded="false"><span>Can churches and schools reproduce the pages?</span><span class="faq-plus">+</span></button>
+        <div class="faq-a">Family purchases should cover one household. Classroom, church, and site-wide reproduction should be governed by the selected license.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" type="button" aria-expanded="false"><span>How much preparation is required?</span><span class="faq-plus">+</span></button>
+        <div class="faq-a">Each lesson should include an estimated preparation time, supply list, teaching time, and optional extension so adults can plan quickly.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PARTNERS ============ -->
+<section class="block partners" id="partners">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">For Churches &amp; Schools</div>
+      <h2 class="serif">Equip the next generation, together</h2>
+      <p>Bulk pricing, classroom bundles, and licensing packets for ministries and Christian schools.</p>
+    </div>
+    <div class="row">
+      <div class="pcard">
+        <div class="pi" style="background:var(--sage)"><svg width="28" height="28" fill="none" stroke="#14663f" stroke-width="2.3" viewBox="0 0 24 24"><path d="M12 2l9 6v13H3V8z"/><path d="M12 2v6"/><path d="M9 21v-6h6v6"/></svg></div>
+        <h3>Churches</h3>
+        <p>Discipleship curriculum for your children's ministry, with leader guides and referral partnerships.</p>
+      </div>
+      <div class="pcard">
+        <div class="pi" style="background:var(--teal-soft)"><svg width="28" height="28" fill="none" stroke="#1fa5b8" stroke-width="2.3" viewBox="0 0 24 24"><path d="M3 9l9-5 9 5-9 5z"/><path d="M7 11v5c0 1 5 3 5 3s5-2 5-3v-5"/></svg></div>
+        <h3>Christian Schools</h3>
+        <p>Standards-aligned classroom bundles and licensing that scale across grade levels.</p>
+      </div>
+      <div class="pcard">
+        <div class="pi" style="background:var(--coral-soft)"><svg width="28" height="28" fill="none" stroke="#ef6a52" stroke-width="2.3" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3"/><circle cx="17" cy="9" r="2.5"/><path d="M3 20c0-3 3-5 6-5s6 2 6 5M15 20c0-2 2-3.5 4-3.5"/></svg></div>
+        <h3>Co-ops &amp; Groups</h3>
+        <p>Group order pricing and shared resources for homeschool communities and parent groups.</p>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:34px">
+      <a href="#sample" class="btn btn-forest">Request a Licensing Packet</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TEAM / FOUNDERS ============ -->
+<section class="block team" id="team">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">About Us</div>
+      <h2 class="serif">Meet the founders</h2>
+      <p>Faith-driven educators and creators building the bridge between academic excellence and Christ-centered discipleship.</p>
+    </div>
+    <div class="team-grid">
+      <div class="team-card">
+        <div class="avatar" style="background:var(--gold)">L</div>
+        <h4>Lauren Colon</h4>
+        <div class="role">Co-Founder · Story &amp; Communications</div>
+        <p>Opens the First Fruits story and carries the message — connecting families, partners, and the mission behind every lesson.</p>
+      </div>
+      <div class="team-card">
+        <div class="avatar" style="background:var(--forest)">A</div>
+        <h4>Anne Livingston</h4>
+        <div class="role">Co-Founder · Early Childhood Specialist</div>
+        <p>Brings together early childhood education and biblical discipleship through a whole-child approach that nurtures children&rsquo;s faith, relationships, and learning from the earliest years.</p>
+      </div>
+      <div class="team-card">
+        <div class="avatar" style="background:var(--coral)">A</div>
+        <h4>Anthony Colon</h4>
+        <div class="role">Co-Founder · Product &amp; Web</div>
+        <p>Builds the platform and product experience, turning the vision into tools families and teachers can use every day.</p>
+      </div>
+      <div class="team-card">
+        <div class="avatar" style="background:var(--teal)">E</div>
+        <h4>Enith Hawthorne</h4>
+        <div class="role">Co-Founder · Growth &amp; Operations</div>
+        <p>Leads strategy, partnerships, and the sustainable business model that keeps the ministry growing and accessible.</p>
+      </div>
+    </div>
+    <p class="placeholder-note">Placeholder headshots &amp; bios — send me your photos and a sentence each and I'll drop them in.</p>
+  </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section class="block whole" id="about" style="background:var(--cream)">
+  <div class="wrap">
+    <div>
+      <div class="eyebrow">Our Vision</div>
+      <h2 class="serif">A generation rooted in Christ</h2>
+      <p class="big">We exist to fill a critical gap in early childhood education — providing Scripture-integrated learning tools that develop the whole child, spiritually, academically, and emotionally.</p>
+      <p style="margin-top:16px;color:var(--ink-soft)">We're pioneering something that has rarely been done: merging secular academic standards with Christ-centered discipleship in the most formative years. We're building the bridge — so no family has to choose between faith and academic excellence.</p>
+    </div>
+    <div style="background:var(--forest);color:#eafff2;border-radius:var(--radius);padding:34px">
+      <p class="serif" style="font-style:italic;font-size:1.35rem;color:#fff;line-height:1.4">“See a generation of children firmly rooted in Christ — equipped with biblical wisdom, strong character, and academic excellence — becoming lifelong disciples who influence their families, communities, and the world for the Kingdom of God.”</p>
+      <p style="margin-top:18px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;font-size:.8rem;color:var(--gold)">— The First Fruits Vision</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SPONSORS ============ -->
+<section class="sponsors" id="sponsors">
+  <div class="wrap">
+    <div class="lbl">Proud to partner with churches, schools &amp; mission-minded sponsors</div>
+    <div class="sponsor-row">
+      <div class="sponsor-logo"><svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 2l8 5v14H4V7z"/><path d="M12 2v5M9 21v-5h6v5"/></svg> Grace Church</div>
+      <div class="sponsor-logo"><svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 9l9-5 9 5-9 5z"/><path d="M7 11v5c0 1 5 3 5 3s5-2 5-3v-5"/></svg> Cornerstone Academy</div>
+      <div class="sponsor-logo"><svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M8 12h8M12 8v8"/></svg> Faith Co-op Network</div>
+      <div class="sponsor-logo"><svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 3l2.4 5 5.6.6-4.2 3.7 1.3 5.7L12 15l-5.1 3 1.3-5.7L4 8.6 9.6 8z"/></svg> Kingdom Kids</div>
+    </div>
+    <p class="placeholder-note" style="margin-top:16px">Placeholder sponsor logos — swap in real partners as they come on board.</p>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <div class="brand"><svg class="logomark" width="40" height="38" viewBox="0 0 64 60"><use href="#ff-logo"/></svg> <span class="wordmark"><span style="color:#fff">First</span> <span class="wm-fruits"><span>F</span><span>r</span><span>u</span><span>i</span><span>t</span><span>s</span></span></span></div>
+        <p style="margin-top:14px"><b style="color:#fff">Learn. Grow. Shine.</b><br>Christ-centered education for K–2 and beyond. Nurturing minds, rooted in Truth.</p>
+        <div class="socials">
+          <a href="#" aria-label="Instagram"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17" cy="7" r="1" fill="currentColor" stroke="none"/></svg></a>
+          <a href="#" aria-label="Facebook"><svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M14 9h3V6h-3c-2 0-3 1-3 3v2H9v3h2v6h3v-6h2.5l.5-3H14V9z"/></svg></a>
+          <a href="#" aria-label="Pinterest"><svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2a10 10 0 00-3.6 19.3c-.1-.8-.2-2 .1-2.9l1.2-5s-.3-.6-.3-1.5c0-1.4.8-2.4 1.8-2.4.9 0 1.3.6 1.3 1.4l-.9 3.7c.3 1 1.6 1.7 2.6 1.7 1.9 0 3.2-2.4 3.2-5.3 0-2.2-1.5-3.8-4.2-3.8-3 0-4.9 2.3-4.9 4.8 0 .9.3 1.5.7 2 .1.2.1.3.1.5l-.3 1c0 .3-.2.4-.5.2-1.2-.5-1.8-1.9-1.8-3.5 0-2.6 2.2-5.7 6.5-5.7 3.5 0 5.8 2.5 5.8 5.2 0 3.6-2 6.3-4.9 6.3-1 0-1.9-.5-2.2-1.1l-.6 2.4c-.2.8-.7 1.7-1 2.3A10 10 0 1012 2z"/></svg></a>
+          <a href="#" aria-label="YouTube"><svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M22 8s-.2-1.5-.8-2.1c-.8-.8-1.6-.8-2-.9C16.4 4.7 12 4.7 12 4.7h0s-4.4 0-7.2.3c-.4.1-1.2.1-2 .9C2.2 6.5 2 8 2 8s-.2 1.8-.2 3.5v1c0 1.7.2 3.5.2 3.5s.2 1.5.8 2.1c.8.8 1.8.8 2.3.9 1.7.2 6.9.3 6.9.3s4.4 0 7.2-.3c.4-.1 1.2-.1 2-.9.6-.6.8-2.1.8-2.1s.2-1.8.2-3.5v-1C22.2 9.8 22 8 22 8zM10 14.5v-5l4.5 2.5-4.5 2.5z"/></svg></a>
+        </div>
+      </div>
+      <div class="foot-col">
+        <h4>Shop</h4>
+        <a href="#shop">365 Day Portfolio</a>
+        <a href="#shop">Expansion Packs</a>
+        <a href="#shop">Activity Kits</a>
+        <a href="#shop">Complete Bundle</a>
+        <a href="#collections">Shop by Grade</a>
+      </div>
+      <div class="foot-col">
+        <h4>Learn</h4>
+        <a href="#whole">Our Method</a>
+        <a href="what-we-believe.html">What We Believe</a>
+        <a href="#about">Our Vision</a>
+        <a href="#values">Our Values</a>
+        <a href="#sample">Free Sample</a>
+      </div>
+      <div class="foot-col">
+        <h4>Partners</h4>
+        <a href="#partners">Churches</a>
+        <a href="#partners">Christian Schools</a>
+        <a href="#partners">Co-ops &amp; Groups</a>
+        <a href="#partners">Licensing &amp; Bulk</a>
+        <a href="#sponsors">Ambassador Program</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 First Fruits. All rights reserved.</span>
+      <span><a href="#">Terms &amp; Conditions</a> · <a href="#">Privacy Policy</a> · <a href="#">Shipping &amp; Returns</a></span>
+    </div>
+  </div>
+</footer>
+
+
+<!-- ============ SEARCH PANEL ============ -->
+<div class="search-panel" id="searchPanel" role="dialog" aria-modal="true" aria-labelledby="searchTitle">
+  <div class="search-box">
+    <div class="search-box-head">
+      <div>
+        <div class="eyebrow">Find a resource</div>
+        <h3 id="searchTitle" class="serif">Search First Fruits</h3>
+      </div>
+      <button class="icon-btn" id="searchClose" aria-label="Close search">
+        <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.4" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18" stroke-linecap="round"/></svg>
+      </button>
+    </div>
+    <input id="siteSearch" type="search" placeholder="Try “phonics”, “identity”, or “classroom”" autocomplete="off" />
+    <div class="search-results" id="searchResults" aria-live="polite"></div>
+  </div>
+</div>
+
+<!-- ============ CART DRAWER ============ -->
+<div class="overlay" id="overlay" onclick="closeCart()"></div>
+<aside class="drawer" id="drawer" role="dialog" aria-modal="true" aria-label="Shopping cart">
+  <div class="drawer-head">
+    <h3>Your Cart</h3>
+    <button class="icon-btn" style="color:#fff" onclick="closeCart()" aria-label="Close cart">
+      <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.4" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18" stroke-linecap="round"/></svg>
+    </button>
+  </div>
+  <div class="drawer-body" id="cartBody"></div>
+  <div class="drawer-foot">
+    <div class="give-block">
+      <label class="giverow"><input type="checkbox" id="roundup" onchange="renderCart()"> 🌱 Round up to sponsor a family in need <b id="roundupAmt">+$0.00</b></label>
+    </div>
+    <div class="subtotal" style="font-size:1rem;font-weight:800;color:var(--ink-soft)"><span>Subtotal</span><span id="subtotal">$0.00</span></div>
+    <div class="giveline" id="giveLine" style="display:none"><span>Giving</span><span id="giveAmt">+$0.00</span></div>
+    <div class="subtotal"><span>Total</span><span id="cartTotal">$0.00</span></div>
+    <div class="cart-progress" aria-hidden="true"><span id="shipProgress"></span></div><div class="ship-note" id="shipNote">Free shipping on orders $75+</div>
+    <button class="btn btn-coral" onclick="checkout()">Checkout</button>
+  </div>
+</aside>
+
+<div class="toast" id="toast"></div>
+
+<script>
+/* ---------------- Product data ---------------- */
+const PRODUCTS = [
+  {
+    "id": "identity",
+    "cats": "unit digital",
+    "name": "Who I Am in Christ",
+    "fmt": "Digital Thematic Unit",
+    "price": 14.99,
+    "pill": {
+      "t": "Launch Unit",
+      "c": ""
+    },
+    "image": "identity.jpg",
+    "desc": "A multi-week K–2 identity unit integrating Scripture declarations, reading, social-emotional learning, and purposeful behavior."
+  },
+  {
+    "id": "god-made-me",
+    "cats": "unit digital",
+    "name": "God Made Me",
+    "fmt": "Science + Faith Unit",
+    "price": 14.99,
+    "pill": {
+      "t": "New",
+      "c": "gold"
+    },
+    "image": "god-made-me.jpg",
+    "desc": "Explore the body, senses, creation, health, and gratitude through developmentally appropriate science and biblical truth."
+  },
+  {
+    "id": "love-like-jesus",
+    "cats": "unit digital",
+    "name": "Love Like Jesus",
+    "fmt": "Character + Relationships Unit",
+    "price": 14.99,
+    "pill": {
+      "t": "Character",
+      "c": "teal"
+    },
+    "image": "love-like-jesus.jpg",
+    "desc": "Teach kindness, forgiveness, service, empathy, and healthy relationships through stories, role play, and Scripture."
+  },
+  {
+    "id": "portfolio",
+    "cats": "physical",
+    "name": "365 Day Learning Binder",
+    "fmt": "Printed Portfolio",
+    "price": 79.99,
+    "pill": {
+      "t": "Flagship",
+      "c": ""
+    },
+    "image": "binder.jpg",
+    "desc": "The complete daily K–2 learning system with Scripture, phonics, math, reading, character, routines, and progress tracking."
+  },
+  {
+    "id": "flashcards",
+    "cats": "physical",
+    "name": "Bible Memory Verse Flashcards",
+    "fmt": "52 Card Set",
+    "price": 19.99,
+    "pill": {
+      "t": "Family Favorite",
+      "c": "gold"
+    },
+    "image": "flashcards.jpg",
+    "desc": "A full year of beautifully designed memory verse cards for morning baskets, review games, and family discipleship."
+  },
+  {
+    "id": "phonics",
+    "cats": "digital",
+    "name": "Phonics & Reading Practice",
+    "fmt": "Printable Skills Pack",
+    "price": 4.99,
+    "pill": {
+      "t": "Printable",
+      "c": "teal"
+    },
+    "image": "phonics.jpg",
+    "desc": "Low-prep practice for letter sounds, sight words, blending, early reading, and confidence."
+  },
+  {
+    "id": "math",
+    "cats": "digital",
+    "name": "Math Made Fun",
+    "fmt": "Printable Skills Pack",
+    "price": 4.99,
+    "pill": {
+      "t": "Printable",
+      "c": "teal"
+    },
+    "image": "math.jpg",
+    "desc": "Hands-on counting, number sense, shapes, patterns, comparison, and problem solving for young learners."
+  },
+  {
+    "id": "social-studies",
+    "cats": "digital",
+    "name": "Social Studies & My World",
+    "fmt": "Printable Exploration Pack",
+    "price": 4.99,
+    "pill": {
+      "t": "Printable",
+      "c": "teal"
+    },
+    "image": "social-studies.jpg",
+    "desc": "Explore family, community, culture, geography, helpers, traditions, and stewardship of the world God made."
+  },
+  {
+    "id": "materials",
+    "cats": "physical",
+    "name": "Hands-On Materials Kit",
+    "fmt": "Unit Supply Box",
+    "price": 34.99,
+    "pill": {
+      "t": "Ships to You",
+      "c": "gold"
+    },
+    "image": "materials-kit.jpg",
+    "desc": "Every specialty supply required for the selected unit, grouped by activity and shipped ready to teach."
+  },
+  {
+    "id": "bundle",
+    "cats": "classroom physical",
+    "name": "Teacher Resource Bundle",
+    "fmt": "Classroom Package",
+    "price": 59.99,
+    "pill": {
+      "t": "Educator",
+      "c": "gold"
+    },
+    "image": "teacher.jpg",
+    "desc": "Lesson plans, differentiation supports, assessment tools, classroom routines, and reproducible student resources."
+  },
+  {
+    "id": "seasonal",
+    "cats": "unit digital classroom",
+    "name": "Seasonal Curriculum Bundle",
+    "fmt": "Holiday + Seasonal Pack",
+    "price": 29.99,
+    "pill": {
+      "t": "Seasonal",
+      "c": "teal"
+    },
+    "image": "seasonal.jpg",
+    "desc": "Christ-centered lessons and activities for Christmas, Easter, gratitude, creation, missions, and other seasonal themes."
+  }
+];
+
+/* ---------------- SVG product art ---------------- */
+function art(kind){
+  const base='<rect width="400" height="300" fill="#eef7ef"/>';
+  const shapes={
+    copywork:`${base}<rect x="70" y="40" width="260" height="220" rx="10" fill="#fff" stroke="#e7ded0"/>
+      <rect x="95" y="66" width="120" height="12" rx="6" fill="#14663f"/>
+      <line x1="95" y1="108" x2="305" y2="108" stroke="#d8ecdc" stroke-width="2"/>
+      <line x1="95" y1="140" x2="305" y2="140" stroke="#d8ecdc" stroke-width="2"/>
+      <line x1="95" y1="172" x2="305" y2="172" stroke="#d8ecdc" stroke-width="2"/>
+      <line x1="95" y1="204" x2="305" y2="204" stroke="#d8ecdc" stroke-width="2"/>
+      <text x="95" y="102" font-family="Fraunces,serif" font-size="20" fill="#1fa5b8" font-style="italic">Give thanks</text>
+      <text x="95" y="134" font-family="Fraunces,serif" font-size="20" fill="#c9d8ce" font-style="italic">Give thanks</text>
+      <g transform="translate(280,210)"><svg width="34" height="34" viewBox="0 0 48 48"><use href="#sprout"/></svg></g>`,
+    verse:`${base}<rect x="80" y="50" width="240" height="200" rx="12" fill="#fff" stroke="#e7ded0"/>
+      <g transform="translate(184,74)"><svg width="34" height="34" viewBox="0 0 48 48"><use href="#sprout"/></svg></g>
+      <text x="200" y="150" text-anchor="middle" font-family="Fraunces,serif" font-size="17" font-style="italic" fill="#14663f">"Be kind to</text>
+      <text x="200" y="176" text-anchor="middle" font-family="Fraunces,serif" font-size="17" font-style="italic" fill="#14663f">one another"</text>
+      <text x="200" y="212" text-anchor="middle" font-family="Nunito,sans-serif" font-size="12" font-weight="700" fill="#1fa5b8">EPHESIANS 4:32</text>`,
+    phonics:`${base}<rect x="60" y="50" width="280" height="200" rx="10" fill="#fff" stroke="#e7ded0"/>
+      <circle cx="110" cy="100" r="26" fill="#fdeecb"/><text x="110" y="108" text-anchor="middle" font-family="Nunito" font-size="26" font-weight="900" fill="#f0a922">Aa</text>
+      <circle cx="180" cy="100" r="26" fill="#d5f0f4"/><text x="180" y="108" text-anchor="middle" font-family="Nunito" font-size="26" font-weight="900" fill="#1fa5b8">Bb</text>
+      <circle cx="250" cy="100" r="26" fill="#fbe0d9"/><text x="250" y="108" text-anchor="middle" font-family="Nunito" font-size="26" font-weight="900" fill="#ef6a52">Cc</text>
+      <line x1="85" y1="165" x2="315" y2="165" stroke="#d8ecdc" stroke-width="2" stroke-dasharray="6 6"/>
+      <line x1="85" y1="200" x2="315" y2="200" stroke="#d8ecdc" stroke-width="2" stroke-dasharray="6 6"/>`,
+    character:`${base}
+      <circle cx="140" cy="120" r="42" fill="#fbe0d9"/><path d="M140 100c0-8-14-8-14 0s14 20 14 20 14-12 14-20-14-8-14 0z" fill="#ef6a52"/>
+      <circle cx="255" cy="120" r="42" fill="#fdeecb"/><path d="M255 100l4 8 9 1-6 6 2 9-9-5-9 5 2-9-6-6 9-1z" fill="#f6b53c"/>
+      <rect x="90" y="185" width="220" height="14" rx="7" fill="#d8ecdc"/>
+      <rect x="120" y="212" width="160" height="12" rx="6" fill="#eef1ec"/>
+      <text x="200" y="262" text-anchor="middle" font-family="Nunito" font-size="14" font-weight="800" fill="#14663f">Love · Joy · Peace · Patience</text>`,
+    tracker:`${base}<rect x="70" y="45" width="260" height="210" rx="10" fill="#fff" stroke="#e7ded0"/>
+      <rect x="70" y="45" width="260" height="34" rx="10" fill="#14663f"/>
+      <text x="200" y="68" text-anchor="middle" font-family="Nunito" font-size="15" font-weight="800" fill="#fff">This Month</text>
+      ${gridCells()}`,
+    bundle:`${base}
+      <rect x="55" y="80" width="150" height="170" rx="10" fill="#1fa5b8" transform="rotate(-6 130 165)"/>
+      <rect x="120" y="60" width="150" height="180" rx="10" fill="#f6b53c" transform="rotate(3 195 150)"/>
+      <rect x="180" y="80" width="150" height="170" rx="10" fill="#14663f" transform="rotate(8 255 165)"/>
+      <g transform="translate(178,120)"><svg width="44" height="44" viewBox="0 0 48 48"><use href="#sprout"/></svg></g>
+      <text x="200" y="185" text-anchor="middle" font-family="Fraunces,serif" font-size="16" fill="#fff" font-weight="600">All-in-One</text>`,
+    identity:`${base}
+      <circle cx="200" cy="120" r="52" fill="#fff" stroke="#e7ded0"/>
+      <g transform="translate(176,86)"><svg width="48" height="48" viewBox="0 0 48 48"><use href="#sprout"/></svg></g>
+      <text x="200" y="150" text-anchor="middle" font-family="Fraunces,serif" font-size="15" font-style="italic" fill="#14663f">I am loved</text>
+      <rect x="60" y="200" width="90" height="22" rx="11" fill="#fbe0d9"/><text x="105" y="216" text-anchor="middle" font-family="Nunito" font-size="11" font-weight="800" fill="#ef6a52">Chosen</text>
+      <rect x="158" y="200" width="84" height="22" rx="11" fill="#d5f0f4"/><text x="200" y="216" text-anchor="middle" font-family="Nunito" font-size="11" font-weight="800" fill="#1fa5b8">Created</text>
+      <rect x="250" y="200" width="90" height="22" rx="11" fill="#fdeecb"/><text x="295" y="216" text-anchor="middle" font-family="Nunito" font-size="11" font-weight="800" fill="#c98a12">Called</text>
+      <text x="200" y="252" text-anchor="middle" font-family="Nunito" font-size="12" font-weight="800" fill="#4d6156">PSALM 139:14</text>`,
+    materials:`${base}
+      <path d="M120 130h160v96H120z" fill="#c98a12"/>
+      <path d="M120 130l80 34 80-34" fill="none" stroke="#8a5f0c" stroke-width="3"/>
+      <path d="M110 108h180l-10 22H120z" fill="#f6b53c"/>
+      <rect x="150" y="150" width="26" height="26" rx="5" fill="#ef6a52"/>
+      <circle cx="215" cy="170" r="15" fill="#1fa5b8"/>
+      <path d="M245 150l20 0 0 20 -20 0z" fill="#1f8a54" transform="rotate(12 255 160)"/>
+      <rect x="150" y="188" width="120" height="8" rx="4" fill="#fff" opacity=".5"/>
+      <text x="200" y="252" text-anchor="middle" font-family="Nunito" font-size="13" font-weight="800" fill="#14663f">Everything you need — shipped</text>`,
+  };
+  return `<svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice">${shapes[kind]||base}</svg>`;
+}
+function gridCells(){
+  let s='';const cols=7,rows=4,x0=84,y0=95,w=32,h=32;
+  const fills=['#eef7ef','#d8ecdc','#fdeecb','#d5f0f4','#fbe0d9'];
+  for(let r=0;r<rows;r++)for(let c=0;c<cols;c++){
+    const fx=x0+c*w, fy=y0+r*h, f=fills[(r*cols+c)%fills.length];
+    s+=`<rect x="${fx}" y="${fy}" width="28" height="28" rx="6" fill="${f}"/>`;
+  }
+  return s;
+}
+
+/* ---------------- Render products ---------------- */
+const grid=document.getElementById('prodGrid');
+let activeFilter='all';
+function renderProducts(){
+  const visible=PRODUCTS.filter(p=>activeFilter==='all'||p.cats.split(' ').includes(activeFilter));
+  grid.innerHTML=visible.map(p=>`
+    <article class="card" data-category="${p.cats}">
+      <div class="thumb">
+        ${p.pill?`<span class="pill ${p.pill.c}">${p.pill.t}</span>`:''}
+        <a href="product-${p.id}.html"><img class="product-photo" src="first-fruits-assets/${p.image}" alt="${p.name}"></a>
+      </div>
+      <div class="body">
+        <div class="fmt">${p.fmt}</div>
+        <h3><a href="product-${p.id}.html" style="color:inherit">${p.name}</a></h3>
+        <p class="desc">${p.desc}</p>
+        <div class="buy">
+          <div class="price">$${p.price.toFixed(2)}<small> USD</small></div>
+          <button class="btn btn-forest btn-sm" type="button" onclick="addToCart('${p.id}')">Add to Cart</button>
+        </div>
+      </div>
+    </article>`).join('');
+}
+document.querySelectorAll('.filter-btn').forEach(btn=>{
+  btn.addEventListener('click',()=>{
+    activeFilter=btn.dataset.filter;
+    document.querySelectorAll('.filter-btn').forEach(b=>b.classList.toggle('active',b===btn));
+    renderProducts();
+  });
+});
+renderProducts();
+
+/* Launch spotlight art */
+const spot=document.getElementById('spotArt');
+if(spot) spot.innerHTML='<img class="product-photo" src="first-fruits-assets/identity.jpg" alt="Who I Am in Christ unit">';
+
+/* ---------------- Cart logic ---------------- */
+function loadCart(){try{return JSON.parse(localStorage.getItem('firstFruitsCart')||'{}')||{};}catch(e){return {};}}
+let cart=loadCart(); // id -> qty
+Object.keys(cart).forEach(id=>{ if(!PRODUCTS.find(p=>p.id===id)) delete cart[id]; }); // drop stale ids
+function saveCart(){try{localStorage.setItem('firstFruitsCart',JSON.stringify(cart));}catch(e){/* storage unavailable — stay in-memory */}}
+function addToCart(id){
+  cart[id]=(cart[id]||0)+1;saveCart();
+  renderCart();showToast(PRODUCTS.find(p=>p.id===id).name+' added to cart');
+  bump();
+}
+function changeQty(id,delta){
+  cart[id]=(cart[id]||0)+delta;
+  if(cart[id]<=0) delete cart[id];
+  saveCart();renderCart();
+}
+function removeItem(id){delete cart[id];saveCart();renderCart();}
+function cartTotals(){
+  let count=0,sum=0;
+  for(const id in cart){const p=PRODUCTS.find(x=>x.id===id);if(!p)continue;count+=cart[id];sum+=p.price*cart[id];}
+  return {count,sum};
+}
+function renderCart(){
+  const body=document.getElementById('cartBody');
+  const ids=Object.keys(cart).filter(id=>PRODUCTS.find(x=>x.id===id));
+  if(!ids.length){
+    body.innerHTML='<div class="cart-empty"><div class="big-emoji">🌱</div><p>Your cart is empty.<br>Start with the 365 Day Portfolio!</p></div>';
+  }else{
+    body.innerHTML=ids.map(id=>{
+      const p=PRODUCTS.find(x=>x.id===id);
+      return `<div class="cart-item">
+        <div class="ci-thumb"><img class="product-photo" src="first-fruits-assets/${p.image}" alt=""></div>
+        <div class="ci-info">
+          <b>${p.name}</b>
+          <div class="ci-price">$${p.price} each</div>
+          <div class="qty">
+            <button onclick="changeQty('${id}',-1)" aria-label="Decrease">−</button>
+            <span>${cart[id]}</span>
+            <button onclick="changeQty('${id}',1)" aria-label="Increase">+</button>
+          </div>
+          <button class="ci-remove" onclick="removeItem('${id}')">Remove</button>
+        </div>
+      </div>`;
+    }).join('');
+  }
+  const {count,sum}=cartTotals();
+  document.getElementById('subtotal').textContent='$'+sum.toFixed(2);
+  // Round-up giving
+  const roundupPotential = sum>0 ? +(Math.ceil(sum+0.001)-sum).toFixed(2) : 0;
+  const checked = document.getElementById('roundup').checked;
+  const donation = checked ? roundupPotential : 0;
+  document.getElementById('roundupAmt').textContent = '+$'+roundupPotential.toFixed(2);
+  const giveLine=document.getElementById('giveLine');
+  giveLine.style.display = donation>0 ? 'flex' : 'none';
+  document.getElementById('giveAmt').textContent = '+$'+donation.toFixed(2);
+  document.getElementById('cartTotal').textContent = '$'+(sum+donation).toFixed(2);
+  const badge=document.getElementById('cartCount');
+  badge.textContent=count;badge.style.display=count?'flex':'none';
+  const note=document.getElementById('shipNote');
+  const progress=document.getElementById('shipProgress');
+  progress.style.width=Math.min(100,(sum/75)*100)+'%';
+  if(sum>=75) note.innerHTML='🎉 You’ve unlocked <b>free shipping!</b>';
+  else if(sum>0) note.textContent='Add $'+(75-sum).toFixed(2)+' more to unlock free shipping.';
+  else note.textContent='Free shipping on orders $75+';
+}
+function bump(){
+  const b=document.getElementById('cartCount');
+  b.animate([{transform:'scale(1)'},{transform:'scale(1.4)'},{transform:'scale(1)'}],{duration:300});
+}
+function openCart(){document.getElementById('drawer').classList.add('open');document.getElementById('overlay').classList.add('open');}
+function closeCart(){document.getElementById('drawer').classList.remove('open');document.getElementById('overlay').classList.remove('open');}
+function checkout(){
+  const {count}=cartTotals();
+  if(!count){showToast('Your cart is empty');return;}
+  showToast('Demo store — checkout is not connected yet 🌱');
+}
+let toastTimer;
+function showToast(msg){
+  const t=document.getElementById('toast');t.textContent=msg;t.classList.add('show');
+  clearTimeout(toastTimer);toastTimer=setTimeout(()=>t.classList.remove('show'),2600);
+}
+function submitEmail(e){
+  e.preventDefault();
+  const input=document.getElementById('emailInput');
+  const status=document.getElementById('formStatus');
+  const v=input.value.trim();
+  if(!v){status.textContent='Enter a valid email address.';return false;}
+  status.textContent='Prototype mode: connect this form to Mailchimp, ConvertKit, Klaviyo, or your own API before launch.';
+  input.value='';
+  showToast('Email captured in demo mode');
+  return false;
+}
+function toggleMenu(){
+  const links=document.getElementById('primaryNav');
+  const btn=document.getElementById('menuToggle');
+  const open=links.classList.toggle('mobile-open');
+  btn.setAttribute('aria-expanded',String(open));
+  btn.setAttribute('aria-label',open?'Close navigation menu':'Open navigation menu');
+}
+
+/* ---------------- Enhanced interactions ---------------- */
+document.getElementById('menuToggle').addEventListener('click',toggleMenu);
+document.querySelectorAll('#primaryNav a').forEach(a=>a.addEventListener('click',()=>{
+  document.getElementById('primaryNav').classList.remove('mobile-open');
+  document.getElementById('menuToggle').setAttribute('aria-expanded','false');
+}));
+
+const searchPanel=document.getElementById('searchPanel');
+const searchInput=document.getElementById('siteSearch');
+const searchResults=document.getElementById('searchResults');
+function openSearch(){
+  searchPanel.classList.add('open');document.body.classList.add('no-scroll');
+  setTimeout(()=>searchInput.focus(),20);runSearch('');
+}
+function closeSearch(){
+  searchPanel.classList.remove('open');document.body.classList.remove('no-scroll');
+  document.getElementById('searchOpen').focus();
+}
+function runSearch(query){
+  const q=query.toLowerCase().trim();
+  const matches=PRODUCTS.filter(p=>!q||[p.name,p.fmt,p.desc,p.cats].join(' ').toLowerCase().includes(q)).slice(0,6);
+  searchResults.innerHTML=matches.length?matches.map(p=>`
+    <div class="search-result">
+      <div><b>${p.name}</b><div style="color:var(--ink-soft);font-size:.86rem">${p.fmt} · $${p.price.toFixed(2)}</div></div>
+      <button class="btn btn-forest btn-sm" type="button" data-search-add="${p.id}">Add</button>
+    </div>`).join(''):'<p style="color:var(--ink-soft)">No matching resources found.</p>';
+  searchResults.querySelectorAll('[data-search-add]').forEach(btn=>btn.addEventListener('click',()=>addToCart(btn.dataset.searchAdd)));
+}
+document.getElementById('searchOpen').addEventListener('click',openSearch);
+document.getElementById('searchClose').addEventListener('click',closeSearch);
+searchPanel.addEventListener('click',e=>{if(e.target===searchPanel)closeSearch();});
+searchInput.addEventListener('input',e=>runSearch(e.target.value));
+
+document.querySelectorAll('.faq-q').forEach(btn=>{
+  btn.addEventListener('click',()=>{
+    const item=btn.closest('.faq-item');
+    const open=item.classList.toggle('open');
+    btn.setAttribute('aria-expanded',String(open));
+  });
+});
+
+document.addEventListener('keydown',e=>{
+  if(e.key==='Escape'){
+    if(searchPanel.classList.contains('open')) closeSearch();
+    closeCart();
+    document.getElementById('primaryNav').classList.remove('mobile-open');
+    document.getElementById('menuToggle').setAttribute('aria-expanded','false');
+  }
+});
+
+renderCart();
+</script>
+</body>
+</html>
