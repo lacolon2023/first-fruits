@@ -4,8 +4,8 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta name="theme-color" content="#14663f" />
-<title>First Fruits — Faith-Based K–2 Learning Portfolio</title>
-<meta name="description" content="Scripture-integrated K–2 learning portfolios that develop the whole child — spiritually, academically, and emotionally." />
+<title>Plans — First Fruits</title>
+<meta name="description" content="First Fruits membership plans for families, educators, churches, and schools, plus institutional licensing." />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500;1,9..144,600&family=Nunito:ital,wght@0,400;0,600;0,700;0,800;0,900;1,600&display=swap" rel="stylesheet" />
@@ -56,7 +56,7 @@
     </a>
     <div class="nav-links" id="primaryNav">
       <a href="shop.html">Shop</a>
-      <a href="plans.html">Plans</a>
+      <a href="plans.html" aria-current="page">Plans</a>
       <a href="our-method.html">Our Method</a>
       <a href="churches.html">Churches &amp; Schools</a>
       <a href="what-we-believe.html">What We Believe</a>
@@ -79,73 +79,128 @@
 <span id="top"></span>
 <main id="main">
 
-<section class="hero">
+<section class="block plans" id="plans">
   <div class="wrap">
-    <div>
-      <div class="eyebrow">Faith-Based K–2 Learning Portfolio</div>
-      <h1 class="serif">Nurturing minds,<br><em>rooted in Truth.</em></h1>
-      <p class="lead">Scripture-integrated learning that develops the whole child — spiritually, academically, and emotionally — during the most formative years of their lives.</p>
-      <div class="cta-row">
-        <a href="shop.html#shop" class="btn btn-coral">Shop the 365 Day Portfolio</a>
-        <a href="index.html#sample" class="btn btn-ghost">Get a Free Sample Pack</a>
-      </div>
-      <div class="social-proof">
-        <span class="stars">★★★★★</span>
-        <span>Built for homeschool families, churches &amp; Christian schools</span>
-      </div>
-      <div class="launch-proof" aria-label="Launch highlights">
-        <div class="proof-card"><b>5-day free sample</b><span>Preview the teaching style before buying.</span></div>
-        <div class="proof-card"><b>Print and digital</b><span>Use the format that fits your family or classroom.</span></div>
-        <div class="proof-card"><b>Founding-family pilot</b><span>Help shape the first complete release.</span></div>
+    <div class="sec-head">
+      <div class="eyebrow">Membership Plans</div>
+      <h2 class="serif">A plan for every home, class &amp; ministry</h2>
+      <p>Unlimited access to weekly lessons, digital media, and printables — updated all year long. Cancel anytime.</p>
+    </div>
+    <div class="plan-grid">
+      <div class="plan featured">
+        <span class="tag">Most Popular</span>
+        <div class="pico" style="background:var(--gold-soft)"><svg width="26" height="26" fill="none" stroke="#f6b53c" stroke-width="2.3" viewBox="0 0 24 24"><path d="M12 3l2 5 5 .5-4 3.5 1.2 5L12 14l-4.2 3 1.2-5-4-3.5 5-.5z"/></svg></div>
+        <h3>Seed</h3>
+        <div class="aud">For Families</div>
+        <div class="cost">$12.99<small>/mo</small></div>
+        <div class="sub">or $119/year — save 25%</div>
+        <ul>
+          <li>All children in one household</li>
+          <li>Weekly lessons &amp; digital media</li>
+          <li>Printable activity sheets</li>
+          <li>Memory verse trackers</li>
+          <li>Parent monitoring dashboard</li>
+        </ul>
+        <button class="btn btn-coral" onclick="showToast('Demo store — memberships open at launch 🌱')">Start Seed Plan</button>
       </div>
 
-    </div>
-    <div class="hero-art">
-      <div class="hero-badge">365 Days<small>Print + Digital</small></div>
-      <div class="hero-card">
-        <img src="first-fruits-assets/binder.jpg" alt="First Fruits 365 Day Learning Binder — the complete K–2 portfolio" style="width:100%;border-radius:16px">
+      <div class="plan">
+        <div class="pico" style="background:var(--teal-soft)"><svg width="26" height="26" fill="none" stroke="#1fa5b8" stroke-width="2.3" viewBox="0 0 24 24"><path d="M4 6h16v11H4z"/><path d="M8 21h8M12 17v4"/></svg></div>
+        <h3>Harvest</h3>
+        <div class="aud">For Educators</div>
+        <div class="cost">$29.99<small>/mo</small></div>
+        <div class="sub">Classrooms up to 30 students</div>
+        <ul>
+          <li>Full lesson plans</li>
+          <li>Printable student assignments</li>
+          <li>Interactive learning modules</li>
+          <li>Classroom admin tools</li>
+        </ul>
+        <button class="btn btn-forest" onclick="showToast('Demo store — memberships open at launch 🌱')">Choose Harvest</button>
       </div>
-    </div>
-  </div>
-</section>
 
-<section class="block ecosystem" id="ecosystem">
-  <div class="wrap">
-    <div class="ecosystem-grid">
-      <div class="ecosystem-visual">
-        <img src="first-fruits-assets/first-fruits-product-ecosystem.jpg" alt="First Fruits K–2 curriculum ecosystem showing digital lessons, workbooks, Bible activity packs, materials kits, and teacher resources">
+      <div class="plan">
+        <div class="pico" style="background:var(--sage)"><svg width="26" height="26" fill="none" stroke="#14663f" stroke-width="2.3" viewBox="0 0 24 24"><path d="M12 2l8 5v14H4V7z"/><path d="M12 2v5M9 21v-5h6v5"/></svg></div>
+        <h3>Church Ministry</h3>
+        <div class="aud">For Ministries</div>
+        <div class="cost">$59.99<small>/mo</small></div>
+        <div class="sub">Sunday school, VBS &amp; more</div>
+        <ul>
+          <li>Multi-user volunteer access</li>
+          <li>Customizable ministry curricula</li>
+          <li>Seasonal event kits</li>
+          <li>Children’s ministry resources</li>
+        </ul>
+        <button class="btn btn-forest" onclick="showToast('Demo store — memberships open at launch 🌱')">Choose Ministry</button>
       </div>
+
+      <div class="plan">
+        <div class="pico" style="background:var(--coral-soft)"><svg width="26" height="26" fill="none" stroke="#ef6a52" stroke-width="2.3" viewBox="0 0 24 24"><path d="M3 21h18M5 21V9l7-5 7 5v12M9 21v-5h6v5"/></svg></div>
+        <h3>School</h3>
+        <div class="aud">Enterprise</div>
+        <div class="cost">$299<small>/mo</small></div>
+        <div class="sub">Multi-classroom site license</div>
+        <ul>
+          <li>Site-wide resource access</li>
+          <li>Administrative oversight</li>
+          <li>Multi-classroom deployment</li>
+          <li>Priority partner support</li>
+        </ul>
+        <button class="btn btn-ghost" onclick="showToast('Demo store — request a licensing packet 🌱')">Contact Sales</button>
+      </div>
+    </div>
+
+    <div class="enterprise">
       <div>
-        <div class="eyebrow">The First Fruits Product System</div>
-        <h2 class="serif">One lesson. Multiple ways to learn.</h2>
-        <p class="big" style="margin-top:14px;color:var(--ink-soft)">Every theme can be delivered digitally, printed on demand, taught hands on, and adapted for a family, classroom, church, or co-op.</p>
-        <div class="ecosystem-points">
-          <div class="ecosystem-point"><span class="ck">✓</span><div><b>Standards aligned by design</b><span>Each academic objective maps to national early learning benchmarks while Scripture shapes the purpose and application.</span></div></div>
-          <div class="ecosystem-point"><span class="ck">✓</span><div><b>Visual, auditory, and kinesthetic</b><span>Stories, songs, discussion prompts, movement, manipulatives, and printable practice work together instead of competing.</span></div></div>
-          <div class="ecosystem-point"><span class="ck">✓</span><div><b>Materials without the scavenger hunt</b><span>Families and teachers can buy an optional activity kit containing the specialty supplies used in the unit.</span></div></div>
-          <div class="ecosystem-point"><span class="ck">✓</span><div><b>Built to scale responsibly</b><span>Digital delivery and print on demand reduce inventory risk while church and school licenses expand reach.</span></div></div>
-        </div>
+        <h3>Institutional licensing for larger deployments</h3>
+        <p>Custom annual contracts for districts and multi-site church networks.</p>
+      </div>
+      <div class="tiers">
+        <div><span>$2,500/yr</span><small>Up to 100 students</small></div>
+        <div><span>$8,000/yr</span><small>Up to 500 students</small></div>
+        <div><span>$15,000+/yr</span><small>1,000+ students</small></div>
       </div>
     </div>
+  
+    <div class="pilot-band">
+      <div>
+        <h3>Not ready for a membership yet?</h3>
+        <p>Join the founding-family pilot and test the first unit before committing to a plan.</p>
+      </div>
+      <a href="index.html#sample" class="btn btn-coral">Apply for Early Access</a>
+    </div>
+
   </div>
 </section>
 
-<section class="block sample" id="sample">
+<section class="block" id="faq">
   <div class="wrap">
-    <div>
-      <div class="eyebrow" style="color:#cdf3f8">Founding Families · Early Access</div>
-      <h2 class="serif">Join our launch pilot</h2>
-      <p>We're inviting a first group of homeschool families, co-ops, and churches to try the curriculum, shape it with your feedback, and get founding-family perks. Test it risk-free and share a review after 30 days. Start with a free 5-day printable sample and we'll keep you posted on launch.</p>
-      <form onsubmit="return submitEmail(event)">
-        <input type="email" id="emailInput" placeholder="you@email.com" required aria-label="Email address" />
-        <button type="submit" class="btn btn-gold">Send My Sample</button>
-      </form>
-      <p class="note">No spam, ever. Unsubscribe anytime. 30-day satisfaction guarantee on all products.</p><div class="form-status" id="formStatus" role="status" aria-live="polite"></div>
+    <div class="sec-head">
+      <div class="eyebrow">Common Questions</div>
+      <h2 class="serif">Know what you are getting before you buy</h2>
+      <p>Clear answers for families, churches, co-ops, and Christian schools.</p>
     </div>
-    <div class="sample-card">
-      <div class="big-emoji">📥</div>
-      <h3 class="serif">5-Day Printable Sample</h3>
-      <p style="color:#e5fbff">A memory-verse copywork page, a phonics worksheet, a Fruit of the Spirit activity, and a monthly tracker — free.</p>
+    <div class="faq-grid">
+      <div class="faq-item">
+        <button class="faq-q" type="button" aria-expanded="false"><span>Is this a complete homeschool curriculum?</span><span class="faq-plus">+</span></button>
+        <div class="faq-a">The launch unit is a focused thematic learning experience. The full 365 Day Portfolio is being built as the broader K–2 system. Product pages should clearly identify which subjects and weeks are included.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" type="button" aria-expanded="false"><span>Which Bible translation do you use?</span><span class="faq-plus">+</span></button>
+        <div class="faq-a">The final product should state the default translation and whether alternate verse cards are available. This is a launch decision that should be made before checkout goes live.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" type="button" aria-expanded="false"><span>What is included in the materials kit?</span><span class="faq-plus">+</span></button>
+        <div class="faq-a">Every consumable or specialty item needed for the selected unit, packed by activity. Common household tools such as pencils, scissors, and crayons can be listed separately.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" type="button" aria-expanded="false"><span>Can churches and schools reproduce the pages?</span><span class="faq-plus">+</span></button>
+        <div class="faq-a">Family purchases should cover one household. Classroom, church, and site-wide reproduction should be governed by the selected license.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" type="button" aria-expanded="false"><span>How much preparation is required?</span><span class="faq-plus">+</span></button>
+        <div class="faq-a">Each lesson should include an estimated preparation time, supply list, teaching time, and optional extension so adults can plan quickly.</div>
+      </div>
     </div>
   </div>
 </section>
