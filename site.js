@@ -19,7 +19,7 @@ function renderCart(){
   if(s>=75)note.innerHTML='🎉 You’ve unlocked <b>free shipping!</b>';else if(s>0)note.textContent='Add $'+(75-s).toFixed(2)+' more for free shipping.';else note.textContent='Free shipping on orders $75+';
 }
 let tt;function toast(m){const t=document.getElementById('toast');t.textContent=m;t.classList.add('show');clearTimeout(tt);tt=setTimeout(()=>t.classList.remove('show'),2400)}
-function checkout(){if(!totals().c){toast('Your cart is empty');return}toast('Demo store — checkout connects at launch 🌱')}
+function checkout(){if(!totals().c){toast('Your cart is empty');return}toast('This is a preview store — thanks for exploring First Fruits! 🌱')}
 function toggleMenu(){document.getElementById('primaryNav').classList.toggle('open')}
 document.addEventListener('keydown',e=>{if(e.key==='Escape')closeCart()});
 renderCart();

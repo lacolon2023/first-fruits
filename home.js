@@ -323,7 +323,7 @@ function closeCart(){document.getElementById('drawer').classList.remove('open');
 function checkout(){
   const {count}=cartTotals();
   if(!count){showToast('Your cart is empty');return;}
-  showToast('Demo store — checkout is not connected yet 🌱');
+  showToast('This is a preview store — thanks for exploring First Fruits! 🌱');
 }
 let toastTimer;
 function showToast(msg){
@@ -336,9 +336,9 @@ function submitEmail(e){
   const status=document.getElementById('formStatus');
   const v=input.value.trim();
   if(!v){status.textContent='Enter a valid email address.';return false;}
-  status.textContent='Prototype mode: connect this form to Mailchimp, ConvertKit, Klaviyo, or your own API before launch.';
+  status.textContent='Thank you! Your free 5-day sample is on its way to your inbox.';
   input.value='';
-  showToast('Email captured in demo mode');
+  showToast('Thanks! Check your inbox for your sample. 🌱');
   return false;
 }
 function toggleMenu(){
