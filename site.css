@@ -103,6 +103,8 @@ footer.site{background:var(--deep);color:#cfe9d6;padding:48px 0 22px;margin-top:
 .foot-col a{display:block;color:#a9cfb4;font-weight:600;font-size:.92rem;padding:4px 0}
 .foot-col a:hover{color:var(--gold)}
 .foot-bottom{border-top:1px solid rgba(255,255,255,.14);margin-top:34px;padding-top:18px;display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;font-size:.83rem;color:#8fbb9c}
+.foot-bottom a{color:#8fbb9c;text-decoration:none}
+.foot-bottom a:hover{color:var(--gold)}
 /* drawer + toast */
 .overlay{position:fixed;inset:0;background:rgba(14,45,29,.5);opacity:0;pointer-events:none;transition:.25s;z-index:90}
 .overlay.open{opacity:1;pointer-events:auto}

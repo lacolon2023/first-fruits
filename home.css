@@ -130,7 +130,7 @@ header.site{position:sticky;top:0;z-index:60;background:rgba(255,255,255,.94);ba
 /* ---------- Section shell ---------- */
 section.block{padding:40px 0}
 .sec-head{text-align:center;max-width:640px;margin:0 auto 28px}
-.sec-head h2{font-size:clamp(1.5rem,2.6vw,2.1rem);color:var(--forest-deep)}
+.sec-head h1,.sec-head h2{font-size:clamp(1.5rem,2.6vw,2.1rem);color:var(--forest-deep)}
 .sec-head p{color:var(--ink-soft);font-size:1.08rem;margin-top:12px}
 
 /* ---------- Collections ---------- */
@@ -269,7 +269,7 @@ section.block{padding:40px 0}
 /* ---------- Differentiator / whole child ---------- */
 .whole{background:var(--gold-soft)}
 .whole .wrap{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:center}
-.whole h2{font-size:clamp(1.5rem,2.6vw,2.05rem);color:var(--forest-deep)}
+.whole h1,.whole h2{font-size:clamp(1.5rem,2.6vw,2.05rem);color:var(--forest-deep)}
 .whole p.big{font-size:1.12rem;color:var(--ink-soft);margin-top:16px}
 .check-list{margin-top:22px;display:grid;gap:14px}
 .check-item{display:flex;gap:12px;align-items:flex-start;font-weight:700;color:var(--ink)}
