@@ -111,13 +111,23 @@
 
 <section class="block offer" id="offer" style="background:var(--sage-soft,#f1f7f3)">
   <style>
-  .offer-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin-top:8px}
-  .offer-card{display:flex;flex-direction:column;background:#fff;border:1px solid var(--line,#e6ede8);border-radius:16px;padding:20px;text-decoration:none;box-shadow:0 2px 10px rgba(20,60,40,.05);transition:transform .15s,box-shadow .15s}
-  .offer-card:hover{transform:translateY(-3px);box-shadow:0 10px 24px rgba(20,60,40,.12)}
-  .offer-ic{width:44px;height:44px;border-radius:12px;display:flex;align-items:center;justify-content:center;margin-bottom:12px;font-size:1.3rem}
-  .offer-card h4{color:var(--forest-deep,#0e4d2f);font-size:1.05rem;margin:0 0 6px}
-  .offer-card p{color:var(--ink-soft,#4a5a50);font-size:.92rem;line-height:1.5;margin:0 0 14px;flex:1}
-  .offer-tag{font-weight:800;font-size:.82rem;color:var(--teal,#1fa5b8)}
+  .offer .sec-head{max-width:720px}
+  .offer-core{display:grid;grid-template-columns:210px 1fr;gap:26px;align-items:center;background:#fff;border:1px solid var(--line,#e6ede8);border-left:6px solid var(--gold,#f0a830);border-radius:20px;padding:22px 26px;box-shadow:0 6px 20px rgba(20,60,40,.09)}
+  .offer-core img{width:100%;border-radius:14px;display:block}
+  .core-label{display:inline-block;font-weight:800;font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:#9a6410;background:var(--gold-soft,#fbf1da);border-radius:999px;padding:5px 13px;margin-bottom:10px}
+  .offer-core h3{font-family:'Fraunces',Georgia,serif;font-weight:600;color:var(--forest-deep,#0e4d2f);font-size:1.5rem;margin:0 0 8px}
+  .offer-core p{color:var(--ink-soft,#4a5a50);font-size:1rem;line-height:1.55;margin:0 0 16px;max-width:56ch}
+  .core-cta{display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+  .core-cta .price{font-weight:800;color:var(--teal,#1fa5b8)}
+  @media(max-width:600px){.offer-core{grid-template-columns:1fr}}
+  .offer-sub{font-weight:800;font-size:.78rem;letter-spacing:.09em;text-transform:uppercase;color:var(--forest,#14663f);text-align:center;margin:26px 0 12px;opacity:.7}
+  .offer-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px}
+  .offer-card{display:flex;flex-direction:column;background:#fff;border:1px solid var(--line,#e6ede8);border-radius:16px;padding:18px;text-decoration:none;box-shadow:0 2px 8px rgba(20,60,40,.05);transition:transform .15s,box-shadow .15s}
+  .offer-card:hover{transform:translateY(-3px);box-shadow:0 10px 22px rgba(20,60,40,.12)}
+  .offer-ic{width:40px;height:40px;border-radius:11px;display:flex;align-items:center;justify-content:center;margin-bottom:11px;font-size:1.2rem}
+  .offer-card h4{color:var(--forest-deep,#0e4d2f);font-size:1rem;margin:0 0 6px}
+  .offer-card p{color:var(--ink-soft,#4a5a50);font-size:.88rem;line-height:1.5;margin:0 0 12px;flex:1}
+  .offer-tag{font-weight:800;font-size:.8rem;color:var(--teal,#1fa5b8)}
   .offer-ways{display:flex;flex-wrap:wrap;gap:10px 14px;align-items:center;justify-content:center;margin-top:26px;font-size:.98rem}
   .offer-ways b{color:var(--forest-deep,#0e4d2f)}
   .offer-ways a{color:var(--forest,#14663f);font-weight:700;text-decoration:none;border:1px solid var(--line,#dbe7df);border-radius:999px;padding:7px 16px;background:#fff}
@@ -126,16 +136,23 @@
   <div class="wrap">
     <div class="sec-head">
       <div class="eyebrow">What is First Fruits?</div>
-      <h2 class="serif">Everything you need to teach faith and academics together</h2>
-      <p>A complete, Christ-centered learning system for Kindergarten through 2nd grade — start with one piece and build the rest around your home, classroom, or ministry.</p>
+      <h2 class="serif">A Christ-centered early learning system for K–2</h2>
+      <p>One core curriculum, with units, printables, kits, and resources that expand it — built to fit your home, classroom, or ministry.</p>
     </div>
+    <div class="offer-core">
+      <img src="first-fruits-assets/binder.jpg" alt="The 365 Day Learning Portfolio binder — the core K–2 curriculum">
+      <div>
+        <span class="core-label">The core curriculum · Start here</span>
+        <h3>365 Day Learning Portfolio</h3>
+        <p>Your complete daily K–2 system — a full year of lessons weaving Bible, reading, math, handwriting, and character into one plan that flexes around your schedule. Everything else builds on this.</p>
+        <div class="core-cta">
+          <a href="product-portfolio.html" class="btn btn-coral">Explore the Portfolio</a>
+          <span class="price">$79.99 · print + digital</span>
+        </div>
+      </div>
+    </div>
+    <div class="offer-sub">Expand &amp; support it</div>
     <div class="offer-grid">
-      <a class="offer-card" href="product-portfolio.html">
-        <div class="offer-ic" style="background:var(--sage,#e3efe7)">📘</div>
-        <h4>365 Day Learning Portfolio</h4>
-        <p>Your complete daily K–2 system — a full year of lessons weaving Bible, reading, math, handwriting, and character into one plan that flexes around your schedule.</p>
-        <span class="offer-tag">The spine · $79.99</span>
-      </a>
       <a class="offer-card" href="product-identity.html">
         <div class="offer-ic" style="background:var(--coral-soft,#fbe3dd)">✝️</div>
         <h4>Thematic Units</h4>
