@@ -86,7 +86,7 @@
       <h1 class="serif">Nurturing minds,<br><em>rooted in Truth.</em></h1>
       <p class="lead">Scripture-integrated learning that develops the whole child — spiritually, academically, and emotionally — during the most formative years of their lives.</p>
       <div class="cta-row">
-        <a href="shop.html#shop" class="btn btn-coral">Shop the 365 Day Portfolio</a>
+        <a href="plans.html" class="btn btn-coral">Explore the Membership</a>
         <a href="index.html#sample" class="btn btn-ghost">Get a Free Sample Pack</a>
       </div>
       <div class="social-proof">
@@ -111,24 +111,26 @@
 
 <section class="block offer" id="offer" style="background:var(--sage-soft,#f1f7f3)">
   <style>
-  .offer .sec-head{max-width:720px}
-  .offer-core{display:grid;grid-template-columns:210px 1fr;gap:26px;align-items:center;background:#fff;border:1px solid var(--line,#e6ede8);border-left:6px solid var(--gold,#f0a830);border-radius:20px;padding:22px 26px;box-shadow:0 6px 20px rgba(20,60,40,.09)}
-  .offer-core img{width:100%;border-radius:14px;display:block}
-  .core-label{display:inline-block;font-weight:800;font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:#9a6410;background:var(--gold-soft,#fbf1da);border-radius:999px;padding:5px 13px;margin-bottom:10px}
-  .offer-core h3{font-family:'Fraunces',Georgia,serif;font-weight:600;color:var(--forest-deep,#0e4d2f);font-size:1.5rem;margin:0 0 8px}
-  .offer-core p{color:var(--ink-soft,#4a5a50);font-size:1rem;line-height:1.55;margin:0 0 16px;max-width:56ch}
-  .core-cta{display:flex;align-items:center;gap:16px;flex-wrap:wrap}
-  .core-cta .price{font-weight:800;color:var(--teal,#1fa5b8)}
-  @media(max-width:600px){.offer-core{grid-template-columns:1fr}}
-  .offer-sub{font-weight:800;font-size:.78rem;letter-spacing:.09em;text-transform:uppercase;color:var(--forest,#14663f);text-align:center;margin:26px 0 12px;opacity:.7}
-  .offer-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px}
-  .offer-card{display:flex;flex-direction:column;background:#fff;border:1px solid var(--line,#e6ede8);border-radius:16px;padding:18px;text-decoration:none;box-shadow:0 2px 8px rgba(20,60,40,.05);transition:transform .15s,box-shadow .15s}
-  .offer-card:hover{transform:translateY(-3px);box-shadow:0 10px 22px rgba(20,60,40,.12)}
-  .offer-ic{width:40px;height:40px;border-radius:11px;display:flex;align-items:center;justify-content:center;margin-bottom:11px;font-size:1.2rem}
-  .offer-card h4{color:var(--forest-deep,#0e4d2f);font-size:1rem;margin:0 0 6px}
-  .offer-card p{color:var(--ink-soft,#4a5a50);font-size:.88rem;line-height:1.5;margin:0 0 12px;flex:1}
-  .offer-tag{font-weight:800;font-size:.8rem;color:var(--teal,#1fa5b8)}
-  .offer-ways{display:flex;flex-wrap:wrap;gap:10px 14px;align-items:center;justify-content:center;margin-top:26px;font-size:.98rem}
+  .offer .sec-head{max-width:760px}
+  .mem-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:8px}
+  @media(max-width:720px){.mem-grid{grid-template-columns:1fr}}
+  .mem-card{position:relative;background:#fff;border:1px solid var(--line,#e6ede8);border-radius:20px;padding:24px 26px;box-shadow:0 4px 16px rgba(20,60,40,.07);display:flex;flex-direction:column}
+  .mem-card.feat{border:2px solid var(--gold,#f0a830);box-shadow:0 8px 24px rgba(20,60,40,.13)}
+  .mem-flag{position:absolute;top:-13px;left:50%;transform:translateX(-50%);white-space:nowrap;background:var(--gold,#f0a830);color:#3a2a08;font-weight:800;font-size:.72rem;letter-spacing:.05em;text-transform:uppercase;border-radius:999px;padding:5px 14px}
+  .mem-name{font-family:'Fraunces',Georgia,serif;font-weight:600;color:var(--forest-deep,#0e4d2f);font-size:1.3rem;margin:0}
+  .mem-price{font-size:2rem;font-weight:900;color:var(--forest-deep,#0e4d2f);line-height:1;margin:6px 0 2px}
+  .mem-price small{font-size:.95rem;font-weight:700;color:var(--ink-soft,#5a6a60)}
+  .mem-subline{color:var(--ink-soft,#5a6a60);font-size:.9rem;margin:0 0 14px}
+  .mem-list{list-style:none;margin:0 0 18px;padding:0;display:grid;gap:9px;flex:1}
+  .mem-list li{display:flex;gap:9px;font-size:.93rem;color:var(--ink,#2c3a32);line-height:1.45}
+  .mem-list .ck{color:var(--forest-bright,#1f8a54);font-weight:900;flex:none}
+  .mem-card .btn{width:100%;text-align:center}
+  .mem-binder{width:92px;border-radius:10px;float:right;margin:0 0 6px 12px}
+  .offer-alt{margin-top:22px;background:#fff;border:1px dashed var(--line,#cdddd2);border-radius:16px;padding:15px 20px;display:flex;flex-wrap:wrap;align-items:center;gap:8px 16px;justify-content:center;text-align:center;font-size:.96rem}
+  .offer-alt b{color:var(--forest-deep,#0e4d2f)}
+  .offer-alt a{color:var(--teal,#1fa5b8);font-weight:800;text-decoration:none}
+  .offer-alt a:hover{text-decoration:underline}
+  .offer-ways{display:flex;flex-wrap:wrap;gap:10px 14px;align-items:center;justify-content:center;margin-top:22px;font-size:.98rem}
   .offer-ways b{color:var(--forest-deep,#0e4d2f)}
   .offer-ways a{color:var(--forest,#14663f);font-weight:700;text-decoration:none;border:1px solid var(--line,#dbe7df);border-radius:999px;padding:7px 16px;background:#fff}
   .offer-ways a:hover{border-color:var(--gold,#f0a830);color:var(--forest-deep,#0e4d2f)}
@@ -137,46 +139,42 @@
     <div class="sec-head">
       <div class="eyebrow">What is First Fruits?</div>
       <h2 class="serif">A Christ-centered early learning system for K–2</h2>
-      <p>One core curriculum, with units, printables, kits, and resources that expand it — built to fit your home, classroom, or ministry.</p>
+      <p>A membership that delivers a new Bible-integrated unit every month, paired with matching learning cards — or get the whole year, bound, with the annual plan.</p>
     </div>
-    <div class="offer-core">
-      <img src="first-fruits-assets/binder.jpg" alt="The 365 Day Learning Portfolio binder — the core K–2 curriculum">
-      <div>
-        <span class="core-label">The core curriculum · Start here</span>
-        <h3>365 Day Learning Portfolio</h3>
-        <p>Your complete daily K–2 system — a full year of lessons weaving Bible, reading, math, handwriting, and character into one plan that flexes around your schedule. Everything else builds on this.</p>
-        <div class="core-cta">
-          <a href="product-portfolio.html" class="btn btn-coral">Explore the Portfolio</a>
-          <span class="price">$79.99 · print + digital</span>
-        </div>
+    <div class="mem-grid">
+      <div class="mem-card">
+        <div class="mem-name">Monthly</div>
+        <div class="mem-price">$29.99<small> / month</small></div>
+        <p class="mem-subline">Digital delivery · cancel anytime</p>
+        <ul class="mem-list">
+          <li><span class="ck">✓</span> A new thematic <b>Unit</b> every month — K–2, differentiated</li>
+          <li><span class="ck">✓</span> One matching <b>set of learning cards</b> each month</li>
+          <li><span class="ck">✓</span> Built on the Science of Reading, aligned to national standards</li>
+          <li><span class="ck">✓</span> Print at home and reuse for every child</li>
+        </ul>
+        <a href="plans.html" class="btn btn-ghost">Start Monthly</a>
+      </div>
+      <div class="mem-card feat">
+        <span class="mem-flag">Best value · save ~$60</span>
+        <img class="mem-binder" src="first-fruits-assets/binder.jpg" alt="The First Fruits Binder — the full year bound">
+        <div class="mem-name">Annual</div>
+        <div class="mem-price">$300<small> / year</small></div>
+        <p class="mem-subline">The whole year, bound in the Binder</p>
+        <ul class="mem-list">
+          <li><span class="ck">✓</span> The <b>Binder</b> — every Unit for the full year, bound</li>
+          <li><span class="ck">✓</span> <b>All</b> the card sets — Memory Verse, Letter &amp; Sight Word</li>
+          <li><span class="ck">✓</span> The complete K–2 curriculum in one place</li>
+          <li><span class="ck">✓</span> Best price — about two months free vs. monthly</li>
+        </ul>
+        <a href="plans.html" class="btn btn-gold">Get the Annual Plan</a>
       </div>
     </div>
-    <div class="offer-sub">Expand &amp; support it</div>
-    <div class="offer-grid">
-      <a class="offer-card" href="product-identity.html">
-        <div class="offer-ic" style="background:var(--coral-soft,#fbe3dd)">✝️</div>
-        <h4>Thematic Units</h4>
-        <p>Focused multi-week studies like Who I Am in Christ, God Made Me, and Love Like Jesus — each differentiated for K, 1st, and 2nd grade.</p>
-        <span class="offer-tag">From $14.99</span>
-      </a>
-      <a class="offer-card" href="product-phonics.html">
-        <div class="offer-ic" style="background:var(--teal-soft,#d8f0f3)">✏️</div>
-        <h4>Printable Learning Packs</h4>
-        <p>Phonics on the Science of Reading, early math, and Scripture-memory practice that reinforces every unit.</p>
-        <span class="offer-tag">From $4.99</span>
-      </a>
-      <a class="offer-card" href="product-materials.html">
-        <div class="offer-ic" style="background:var(--gold-soft,#fbf1da)">📦</div>
-        <h4>Hands-On Activity Kits</h4>
-        <p>The specialty supplies for a unit — gathered, labeled by lesson, and shipped to your door. No scavenger hunt.</p>
-        <span class="offer-tag">Add-on · $34.99</span>
-      </a>
-      <a class="offer-card" href="churches.html#partners">
-        <div class="offer-ic" style="background:var(--sage,#e3efe7)">🏫</div>
-        <h4>Teacher &amp; Ministry Resources</h4>
-        <p>Lesson planning, leader guides, and multi-learner access for classrooms, churches, co-ops, and Christian schools.</p>
-        <span class="offer-tag">For groups</span>
-      </a>
+    <div class="offer-alt">
+      <b>Not ready to subscribe?</b>
+      <span>Buy à la carte —</span>
+      <a href="product-identity.html">Individual Units, $14.99</a>
+      <span>·</span>
+      <a href="product-flashcards.html">Card Sets, $4.99</a>
     </div>
     <div class="offer-ways">
       <b>Built for every setting:</b>
@@ -191,7 +189,7 @@
   <div class="wrap">
     <div class="ecosystem-grid">
       <div class="ecosystem-visual">
-        <img src="first-fruits-assets/first-fruits-product-ecosystem.jpg" alt="First Fruits K–2 curriculum ecosystem showing digital lessons, workbooks, Bible activity packs, materials kits, and teacher resources">
+        <img src="first-fruits-assets/first-fruits-product-ecosystem.jpg" alt="First Fruits K–2 curriculum ecosystem — digital lessons, workbooks, Bible activity packs, learning cards, and teacher resources">
       </div>
       <div>
         <div class="eyebrow">More than Bible verses on a worksheet</div>
@@ -200,7 +198,7 @@
         <div class="ecosystem-points">
           <div class="ecosystem-point"><span class="ck">✓</span><div><b>Standards aligned by design</b><span>Each academic objective maps to national early learning benchmarks while Scripture shapes the purpose and application.</span></div></div>
           <div class="ecosystem-point"><span class="ck">✓</span><div><b>Visual, auditory, and kinesthetic</b><span>Stories, songs, discussion prompts, movement, manipulatives, and printable practice work together instead of competing.</span></div></div>
-          <div class="ecosystem-point"><span class="ck">✓</span><div><b>Materials without the scavenger hunt</b><span>Families and teachers can buy an optional activity kit containing the specialty supplies used in the unit.</span></div></div>
+          <div class="ecosystem-point"><span class="ck">✓</span><div><b>Reinforced with learning cards</b><span>Every unit pairs with matching card sets — Memory Verse, Letter, and Sight Word — to practice and review.</span></div></div>
           <div class="ecosystem-point"><span class="ck">✓</span><div><b>Choose the format that fits you</b><span>Print lessons at home, order physical resources when you need them, or equip a whole classroom — one coordinated system, your way.</span></div></div>
         </div>
       </div>
@@ -244,10 +242,10 @@
       </div>
       <div class="foot-col">
         <h4>Shop</h4>
-        <a href="shop.html#shop">365 Day Portfolio</a>
-        <a href="shop.html#shop">Expansion Packs</a>
-        <a href="shop.html#shop">Activity Kits</a>
-        <a href="shop.html#shop">Complete Bundle</a>
+        <a href="plans.html">Membership</a>
+        <a href="product-identity.html">Units</a>
+        <a href="product-flashcards.html">Card Sets</a>
+        <a href="product-portfolio.html">The Binder</a>
         <a href="shop.html#collections">Shop by Grade</a>
       </div>
       <div class="foot-col">

@@ -40,86 +40,60 @@ const PRODUCTS = [
     "desc": "Teach kindness, forgiveness, service, empathy, and healthy relationships through stories, role play, and Scripture."
   },
   {
-    "id": "portfolio",
-    "cats": "physical",
-    "name": "365 Day Learning Binder",
-    "fmt": "Printed Portfolio",
-    "price": 79.99,
+    "id": "seasonal",
+    "cats": "unit digital",
+    "name": "Seasonal Unit",
+    "fmt": "Digital Thematic Unit",
+    "price": 14.99,
     "pill": {
-      "t": "Flagship",
-      "c": ""
+      "t": "Seasonal",
+      "c": "teal"
     },
-    "image": "binder.jpg",
-    "desc": "The complete daily K–2 learning system with Scripture, phonics, math, reading, character, routines, and progress tracking."
+    "image": "seasonal.jpg",
+    "desc": "Christ-centered lessons and activities for Christmas, Easter, gratitude, creation, and other seasonal themes — differentiated K–2."
   },
   {
     "id": "flashcards",
-    "cats": "physical",
-    "name": "Bible Memory Verse Flashcards",
-    "fmt": "52 Card Set",
-    "price": 19.99,
+    "cats": "card digital",
+    "name": "Memory Verse Cards",
+    "fmt": "Printable Card Set",
+    "price": 4.99,
     "pill": {
-      "t": "Family Favorite",
+      "t": "Card Set",
       "c": "gold"
     },
     "image": "flashcards.jpg",
     "desc": "A full year of beautifully designed memory verse cards for morning baskets, review games, and family discipleship."
   },
   {
-    "id": "phonics",
-    "cats": "digital",
-    "name": "Phonics & Reading Practice",
-    "fmt": "Printable Skills Pack",
+    "id": "letter-cards",
+    "cats": "card digital",
+    "name": "Letter Cards",
+    "fmt": "Printable Card Set",
     "price": 4.99,
     "pill": {
-      "t": "Printable",
+      "t": "Card Set",
       "c": "teal"
     },
-    "image": "phonics.jpg",
-    "desc": "Low-prep practice for letter sounds, sight words, blending, early reading, and confidence."
+    "image": "flashcards.jpg",
+    "desc": "Uppercase and lowercase letter cards with picture cues, built on the Science of Reading for letter–sound practice."
   },
   {
-    "id": "math",
-    "cats": "digital",
-    "name": "Math Made Fun",
-    "fmt": "Printable Skills Pack",
+    "id": "sight-word-cards",
+    "cats": "card digital",
+    "name": "Sight Word Cards",
+    "fmt": "Printable Card Set",
     "price": 4.99,
     "pill": {
-      "t": "Printable",
+      "t": "Card Set",
       "c": "teal"
     },
-    "image": "math.jpg",
-    "desc": "Hands-on counting, number sense, shapes, patterns, comparison, and problem solving for young learners."
-  },
-  {
-    "id": "social-studies",
-    "cats": "digital",
-    "name": "Social Studies & My World",
-    "fmt": "Printable Exploration Pack",
-    "price": 4.99,
-    "pill": {
-      "t": "Printable",
-      "c": "teal"
-    },
-    "image": "social-studies.jpg",
-    "desc": "Explore family, community, culture, geography, helpers, traditions, and stewardship of the world God made."
-  },
-  {
-    "id": "materials",
-    "cats": "physical",
-    "name": "Hands-On Materials Kit",
-    "fmt": "Unit Supply Box",
-    "price": 34.99,
-    "pill": {
-      "t": "Ships to You",
-      "c": "gold"
-    },
-    "image": "materials-kit.jpg",
-    "desc": "Every specialty supply required for the selected unit, grouped by activity and shipped ready to teach."
+    "image": "flashcards.jpg",
+    "desc": "High-frequency sight words sequenced for K–2 readers, for word walls, flash review, and fluency games."
   },
   {
     "id": "bundle",
-    "cats": "classroom physical",
+    "cats": "classroom",
     "name": "Teacher Resource Bundle",
     "fmt": "Classroom Package",
     "price": 59.99,
@@ -129,19 +103,6 @@ const PRODUCTS = [
     },
     "image": "teacher.jpg",
     "desc": "Lesson plans, differentiation supports, assessment tools, classroom routines, and reproducible student resources."
-  },
-  {
-    "id": "seasonal",
-    "cats": "unit digital classroom",
-    "name": "Seasonal Curriculum Bundle",
-    "fmt": "Holiday + Seasonal Pack",
-    "price": 29.99,
-    "pill": {
-      "t": "Seasonal",
-      "c": "teal"
-    },
-    "image": "seasonal.jpg",
-    "desc": "Christ-centered lessons and activities for Christmas, Easter, gratitude, creation, missions, and other seasonal themes."
   }
 ];
 
@@ -275,7 +236,7 @@ function renderCart(){
   const body=document.getElementById('cartBody');
   const ids=Object.keys(cart).filter(id=>PRODUCTS.find(x=>x.id===id));
   if(!ids.length){
-    body.innerHTML='<div class="cart-empty"><div class="big-emoji">🌱</div><p>Your cart is empty.<br>Start with the 365 Day Portfolio!</p></div>';
+    body.innerHTML='<div class="cart-empty"><div class="big-emoji">🌱</div><p>Your cart is empty.<br>Start with a unit — or join the membership!</p></div>';
   }else{
     body.innerHTML=ids.map(id=>{
       const p=PRODUCTS.find(x=>x.id===id);
