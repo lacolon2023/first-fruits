@@ -4,8 +4,8 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta name="theme-color" content="#14663f" />
-<title>Plans — First Fruits</title>
-<meta name="description" content="First Fruits membership plans for families, educators, churches, and schools, plus institutional licensing." />
+<title>Kindergarten — First Fruits</title>
+<meta name="description" content="The First Fruits Kindergarten membership — one household, full library access. Every available unit and printable card deck, plus new Christ-centered curriculum added throughout the year. $29.99/month or $300/year." />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500;1,9..144,600&family=Nunito:ital,wght@0,400;0,600;0,700;0,800;0,900;1,600&display=swap" rel="stylesheet" />
@@ -20,7 +20,6 @@
     <path d="M24 22C24 15 29 9 38 9c0 7-6 13-14 13Z" fill="#1fa5b8"/>
     <circle cx="24" cy="17" r="4.2" fill="#ef6a52"/>
   </symbol>
-  <!-- Primary brand mark: rising sun + cross over an open book -->
   <symbol id="ff-logo" viewBox="0 0 64 60">
     <g stroke="#f0a830" stroke-width="2.6" stroke-linecap="round">
       <line x1="32" y1="1.5" x2="32" y2="8"/>
@@ -56,7 +55,7 @@
     </a>
     <div class="nav-links" id="primaryNav">
       <a href="shop.html">Shop</a>
-      <a href="plans.html" aria-current="page">Plans</a>
+      <a href="plans.html">Plans</a>
       <a href="our-method.html">Our Method</a>
       <a href="churches.html">Churches &amp; Schools</a>
       <a href="what-we-believe.html">What We Believe</a>
@@ -79,12 +78,165 @@
 <span id="top"></span>
 <main id="main">
 
-<section class="block plans" id="plans">
+<style>
+.kg-hero{background:linear-gradient(160deg,#fbf6ec 0%,#eef7ef 60%,#e7f4ee 100%)}
+.kg-hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center;padding-top:52px;padding-bottom:52px}
+@media(max-width:860px){.kg-hero .wrap{grid-template-columns:1fr;gap:26px}}
+.kg-crumb{font-size:.82rem;font-weight:800;color:var(--ink-soft);letter-spacing:.02em;margin-bottom:14px}
+.kg-crumb a{color:var(--teal);text-decoration:none}
+.kg-badge{display:inline-flex;align-items:center;gap:8px;background:var(--forest);color:#eafff2;font-weight:800;font-size:.8rem;letter-spacing:.04em;text-transform:uppercase;border-radius:999px;padding:7px 15px;margin-bottom:14px}
+.kg-hero h1{font-family:'Fraunces',Georgia,serif;font-weight:600;color:var(--forest-deep);font-size:2.7rem;line-height:1.08;margin:0 0 14px}
+.kg-hero .lead{font-size:1.12rem;color:var(--ink-soft);line-height:1.55;margin:0 0 22px;max-width:34ch}
+.kg-cta{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+.kg-price-note{margin-top:16px;font-size:.95rem;color:var(--ink-soft)}
+.kg-price-note b{color:var(--forest-deep)}
+.kg-hero-card{background:#fff;border:1px solid var(--line);border-radius:22px;box-shadow:var(--shadow-lg);padding:22px}
+.kg-hero-card img{width:100%;border-radius:14px}
+.kg-hero-cap{margin-top:12px;font-size:.9rem;color:var(--ink-soft);text-align:center}
+.kg-steps{display:flex;flex-wrap:wrap;gap:8px 20px;justify-content:center;margin:-14px 0 30px;font-size:.9rem;font-weight:800;color:var(--ink-soft)}
+.kg-steps span{display:inline-flex;align-items:center;gap:8px}
+.kg-steps .n{width:22px;height:22px;border-radius:50%;background:var(--forest);color:#fff;display:inline-flex;align-items:center;justify-content:center;font-size:.78rem}
+.lib-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:22px}
+@media(max-width:900px){.lib-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:520px){.lib-grid{grid-template-columns:1fr}}
+.lib-card{background:#fff;border:1px solid var(--line);border-radius:16px;overflow:hidden;box-shadow:0 4px 14px rgba(20,60,40,.06);display:flex;flex-direction:column}
+.lib-card img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.lib-card .lc-body{padding:14px 15px 16px}
+.lib-card .lc-tag{font-size:.72rem;font-weight:800;letter-spacing:.03em;text-transform:uppercase;color:var(--teal);margin-bottom:5px}
+.lib-card h3{font-family:'Fraunces',Georgia,serif;font-weight:600;color:var(--forest-deep);font-size:1.12rem;margin:0 0 5px;line-height:1.15}
+.lib-card p{font-size:.88rem;color:var(--ink-soft);line-height:1.45;margin:0}
+.lib-more{margin-top:16px;text-align:center;font-size:.98rem;color:var(--ink-soft)}
+.lib-more b{color:var(--forest-deep)}
+.subj-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:22px}
+@media(max-width:820px){.subj-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:520px){.subj-grid{grid-template-columns:1fr}}
+.subj{display:flex;gap:12px;background:#fff;border:1px solid var(--line);border-radius:14px;padding:16px 17px}
+.subj .si{width:40px;height:40px;border-radius:11px;flex:none;display:flex;align-items:center;justify-content:center;font-size:1.2rem}
+.subj b{display:block;color:var(--forest-deep);font-size:1rem;margin-bottom:2px}
+.subj span{font-size:.86rem;color:var(--ink-soft);line-height:1.4}
+.kg-sample{background:var(--forest);color:#eafff2}
+.kg-sample .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:34px;align-items:center;padding-top:44px;padding-bottom:44px}
+@media(max-width:820px){.kg-sample .wrap{grid-template-columns:1fr;gap:22px}}
+.kg-sample h2{font-family:'Fraunces',Georgia,serif;font-weight:600;color:#fff;font-size:1.9rem;margin:0 0 12px}
+.kg-sample p{color:#d7f0e2;font-size:1.03rem;line-height:1.55;margin:0 0 18px}
+.kg-sample .eyebrow{color:#bfe9d2}
+.kg-sample-card{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.2);border-radius:18px;padding:26px;text-align:center}
+.kg-sample-card .big-emoji{font-size:3rem;margin-bottom:8px}
+.kg-sample-card h3{font-family:'Fraunces',Georgia,serif;font-weight:600;color:#fff;font-size:1.25rem;margin:0 0 6px}
+.kg-sample-card p{color:#cdeadb;font-size:.95rem;margin:0}
+</style>
+
+<section class="kg-hero">
+  <div class="wrap">
+    <div>
+      <div class="kg-crumb"><a href="index.html">Home</a> · <a href="index.html#choose">Families</a> · Kindergarten</div>
+      <div class="kg-badge"><svg width="15" height="15" viewBox="0 0 48 48"><use href="#sprout"/></svg> First Fruits Kindergarten</div>
+      <h1>One membership. Your whole Kindergarten library.</h1>
+      <p class="lead">Every available First Fruits Kindergarten unit and printable card deck — plus new Christ-centered curriculum added throughout the year. One membership covers your household.</p>
+      <div class="kg-cta">
+        <a href="#join" class="btn btn-coral">Start Monthly · $29.99</a>
+        <a href="sample-lesson.html" class="btn btn-ghost">Try a free lesson</a>
+      </div>
+      <div class="kg-price-note"><b>$29.99/month</b> or <b>$300/year</b> (about two months free) · cancel anytime · not priced per child.</div>
+    </div>
+    <div class="kg-hero-card">
+      <img src="first-fruits-assets/identity.jpg" alt="First Fruits Kindergarten — the Who I Am in Christ launch unit">
+      <div class="kg-hero-cap">A growing, Christ-centered Kindergarten library — built on the Science of Reading.</div>
+    </div>
+  </div>
+</section>
+
+<section class="block">
+  <div class="wrap">
+    <div class="kg-steps">
+      <span><span class="n">1</span> See what's inside</span>
+      <span><span class="n">2</span> Try a real lesson</span>
+      <span><span class="n">3</span> Understand the value</span>
+      <span><span class="n">4</span> Join your household</span>
+    </div>
+    <div class="sec-head">
+      <div class="eyebrow">What's inside the library</div>
+      <h2 class="serif">Whole-child units, added throughout the year</h2>
+      <p>Your membership unlocks every Kindergarten unit available today — each a focused, multi-week experience that weaves Bible, reading, math, and character together. New units are added all year at no extra cost.</p>
+    </div>
+    <div class="lib-grid">
+      <div class="lib-card">
+        <img src="first-fruits-assets/identity.jpg" alt="Who I Am in Christ unit">
+        <div class="lc-body">
+          <div class="lc-tag">Launch Unit</div>
+          <h3>Who I Am in Christ</h3>
+          <p>A child's identity in Christ — Scripture declarations, reading, and social-emotional learning.</p>
+        </div>
+      </div>
+      <div class="lib-card">
+        <img src="first-fruits-assets/god-made-me.jpg" alt="God Made Me unit">
+        <div class="lc-body">
+          <div class="lc-tag">Science + Faith</div>
+          <h3>God Made Me</h3>
+          <p>The body, senses, creation, and gratitude through hands-on science and biblical truth.</p>
+        </div>
+      </div>
+      <div class="lib-card">
+        <img src="first-fruits-assets/love-like-jesus.jpg" alt="Love Like Jesus unit">
+        <div class="lc-body">
+          <div class="lc-tag">Character</div>
+          <h3>Love Like Jesus</h3>
+          <p>Kindness, forgiveness, and service through stories, role play, and Scripture.</p>
+        </div>
+      </div>
+      <div class="lib-card">
+        <img src="first-fruits-assets/seasonal.jpg" alt="Seasonal units">
+        <div class="lc-body">
+          <div class="lc-tag">Added All Year</div>
+          <h3>Seasonal Units</h3>
+          <p>Christ-centered lessons for Christmas, Easter, gratitude, and creation — added as the year turns.</p>
+        </div>
+      </div>
+    </div>
+    <div class="lib-more">Plus matching <b>printable card decks</b> — Memory Verse, Letter &amp; Sight Word — included with every membership.</div>
+  </div>
+</section>
+
+<section class="block" style="background:var(--sage-soft)">
   <div class="wrap">
     <div class="sec-head">
-      <div class="eyebrow">Membership Plans</div>
-      <h1 class="serif">One membership. Your whole Kindergarten library.</h1>
-      <p>Get every available First Fruits Kindergarten unit and printable card deck, plus new Christ-centered curriculum added throughout the year. One membership covers your household. Cancel anytime.</p>
+      <div class="eyebrow">More than Bible verses on a worksheet</div>
+      <h2 class="serif">One cohesive, whole-child Kindergarten</h2>
+      <p>Every unit is built on the Science of Reading and reaches every learner — visual, auditory, and kinesthetic — with Christ at the center.</p>
+    </div>
+    <div class="subj-grid">
+      <div class="subj"><span class="si" style="background:var(--gold-soft)">✝️</span><div><b>Bible &amp; Identity</b><span>Scripture, memory verses, and a child's identity in Christ woven through every theme.</span></div></div>
+      <div class="subj"><span class="si" style="background:var(--teal-soft)">🔤</span><div><b>Language &amp; Literacy</b><span>Phonics, phonemic awareness, and fluency taught the way children actually learn to read.</span></div></div>
+      <div class="subj"><span class="si" style="background:var(--coral-soft)">🔢</span><div><b>Early Math</b><span>Counting, patterns, and number sense through hands-on, developmentally appropriate practice.</span></div></div>
+      <div class="subj"><span class="si" style="background:var(--sage)">💛</span><div><b>Character &amp; Social-Emotional</b><span>Kindness, patience, and self-regulation modeled on the fruit of the Spirit.</span></div></div>
+      <div class="subj"><span class="si" style="background:var(--gold-soft)">🔬</span><div><b>Science &amp; Discovery</b><span>Creation, the senses, and the natural world explored with wonder and Scripture.</span></div></div>
+      <div class="subj"><span class="si" style="background:var(--teal-soft)">🌍</span><div><b>Social Studies</b><span>Family, community, and God's world — a child's place in it, rooted in Truth.</span></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="kg-sample">
+  <div class="wrap">
+    <div>
+      <div class="eyebrow">Try before you join</div>
+      <h2>See a real lesson — free</h2>
+      <p>Open a differentiated Week 1 from <i>Who I Am in Christ</i> — the same lesson taught three ways, so a kindergartner and an older sibling can learn side by side. This is the teaching style, in your hands, before you ever pay.</p>
+      <a href="sample-lesson.html" class="btn btn-gold">Open the free sample lesson</a>
+    </div>
+    <div class="kg-sample-card">
+      <div class="big-emoji">📖</div>
+      <h3>Who I Am in Christ · Week 1</h3>
+      <p>A differentiated lesson with phonics, a memory verse, and a hands-on activity — free to preview.</p>
+    </div>
+  </div>
+</section>
+
+<section class="block plans" id="join">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">Join your household</div>
+      <h2 class="serif">One membership covers your whole family</h2>
+      <p>Full Kindergarten library access, printable card decks included, new curriculum all year. Not priced per child — cancel anytime.</p>
     </div>
     <div class="plan-grid">
       <div class="plan">
@@ -96,13 +248,12 @@
         <ul>
           <li>Full <b>Kindergarten library</b> access — every available unit</li>
           <li>Printable card decks included</li>
-          <li>New Christ-centered curriculum added throughout the year</li>
-          <li>Science of Reading · one household, not per child</li>
+          <li>New curriculum added throughout the year</li>
+          <li>One household · not priced per child</li>
           <li>Cancel anytime</li>
         </ul>
         <button class="btn btn-forest" onclick="showToast('Demo store — memberships open at launch 🌱')">Start Monthly</button>
       </div>
-
       <div class="plan featured">
         <span class="tag">Best Value · ~2 months free</span>
         <div class="pico" style="background:var(--gold-soft)"><svg width="26" height="26" fill="none" stroke="#f6b53c" stroke-width="2.3" viewBox="0 0 24 24"><path d="M12 3l2 5 5 .5-4 3.5 1.2 5L12 14l-4.2 3 1.2-5-4-3.5 5-.5z"/></svg></div>
@@ -119,67 +270,9 @@
         <button class="btn btn-coral" onclick="showToast('Demo store — memberships open at launch 🌱')">Get the Annual Plan</button>
       </div>
     </div>
-
     <div class="offer-alt" style="margin-top:22px;background:#fff;border:1px dashed var(--line,#cdddd2);border-radius:16px;padding:15px 20px;display:flex;flex-wrap:wrap;align-items:center;gap:8px 16px;justify-content:center;text-align:center">
       <b style="color:var(--forest-deep)">Want just one resource?</b>
-      <span>Buy an individual <a href="product-identity.html" style="color:var(--teal);font-weight:800;text-decoration:none">Unit ($14.99)</a> or <a href="product-flashcards.html" style="color:var(--teal);font-weight:800;text-decoration:none">Card Deck ($4.99)</a> à la carte — yours to keep, no membership required.</span>
-    </div>
-
-    <div class="enterprise">
-      <div>
-        <h3>Schools, co-ops &amp; churches</h3>
-        <p>A digital site license for your whole group, priced by size, with teacher Binders included. Printed student kits — physical books each child keeps — available at $149 per child.</p>
-      </div>
-      <div class="tiers">
-        <div><span>$500/yr</span><small>Micro · up to 35 children</small></div>
-        <div><span>$2,000/yr</span><small>School · 36–100 children</small></div>
-        <div><span>Starting at $6,000/yr</span><small>Large institutions &amp; districts</small></div>
-      </div>
-    </div>
-  
-    <div class="pilot-band">
-      <div>
-        <h3>Not ready for a membership yet?</h3>
-        <p>Join the founding-family pilot and test the first unit before committing to a plan.</p>
-      </div>
-      <a href="index.html#sample" class="btn btn-coral">Apply for Early Access</a>
-    </div>
-
-  </div>
-</section>
-
-<section class="block" id="faq">
-  <div class="wrap">
-    <div class="sec-head">
-      <div class="eyebrow">Common Questions</div>
-      <h2 class="serif">Know what you are getting before you buy</h2>
-      <p>Clear answers for families, churches, co-ops, and Christian schools.</p>
-    </div>
-    <div class="faq-grid">
-      <div class="faq-item">
-        <button class="faq-q" type="button" aria-expanded="false"><span>What does my membership include?</span><span class="faq-plus">+</span></button>
-        <div class="faq-a">Your membership unlocks the full First Fruits Kindergarten library — every unit and printable card deck available today, like Who I Am in Christ — plus new Christ-centered curriculum added throughout the year. Each unit is a focused, multi-week experience that weaves Bible, reading, math, and character together, built on the Science of Reading. One membership covers your whole household.</div>
-      </div>
-      <div class="faq-item">
-        <button class="faq-q" type="button" aria-expanded="false"><span>What happens if I cancel?</span><span class="faq-plus">+</span></button>
-        <div class="faq-a">Your membership gives you access to the digital library for as long as it's active, and you can cancel anytime. Individual units and card decks you buy à la carte, and any physical items you order, are yours to keep permanently.</div>
-      </div>
-      <div class="faq-item">
-        <button class="faq-q" type="button" aria-expanded="false"><span>Which Bible translation do you use?</span><span class="faq-plus">+</span></button>
-        <div class="faq-a">We use a clear, easy-to-read translation chosen for young learners, and every unit includes printable memory-verse cards you can send home or post in the classroom.</div>
-      </div>
-      <div class="faq-item">
-        <button class="faq-q" type="button" aria-expanded="false"><span>Are the card decks included, or extra?</span><span class="faq-plus">+</span></button>
-        <div class="faq-a">Printable card decks — Memory Verse, Letter, and Sight Word — are included with your membership at no extra cost. Print them at home and reuse them for every child. You can also buy a single card deck à la carte for $4.99 if you're not a member.</div>
-      </div>
-      <div class="faq-item">
-        <button class="faq-q" type="button" aria-expanded="false"><span>Can churches and schools reproduce the pages?</span><span class="faq-plus">+</span></button>
-        <div class="faq-a">A family membership covers one household. Churches, co-ops, and Christian schools are covered by our site licenses, priced by size — with printed student kits available per child. See the licensing options above.</div>
-      </div>
-      <div class="faq-item">
-        <button class="faq-q" type="button" aria-expanded="false"><span>How much preparation is required?</span><span class="faq-plus">+</span></button>
-        <div class="faq-a">Every lesson lists an estimated prep time, a simple supply list, teaching time, and an optional extension — so you can plan your day in just a few minutes.</div>
-      </div>
+      <span>Buy an individual <a href="product-identity.html" style="color:var(--teal);font-weight:800;text-decoration:none">Unit ($14.99)</a> or <a href="product-flashcards.html" style="color:var(--teal);font-weight:800;text-decoration:none">Card Deck ($4.99)</a> to keep — no membership required. Grades 1 and 2 are on the way.</span>
     </div>
   </div>
 </section>
@@ -241,7 +334,7 @@
         <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.4" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18" stroke-linecap="round"/></svg>
       </button>
     </div>
-    <input id="siteSearch" type="search" placeholder="Try “phonics”, “identity”, or “classroom”" autocomplete="off" />
+    <input id="siteSearch" type="search" placeholder="Try “phonics”, “identity”, or “cards”" autocomplete="off" />
     <div class="search-results" id="searchResults" aria-live="polite"></div>
   </div>
 </div>
@@ -262,7 +355,7 @@
     <div class="subtotal" style="font-size:1rem;font-weight:800;color:var(--ink-soft)"><span>Subtotal</span><span id="subtotal">$0.00</span></div>
     <div class="giveline" id="giveLine" style="display:none"><span>Giving</span><span id="giveAmt">+$0.00</span></div>
     <div class="subtotal"><span>Total</span><span id="cartTotal">$0.00</span></div>
-    <div class="cart-progress" aria-hidden="true"><span id="shipProgress"></span></div><div class="ship-note" id="shipNote">Free shipping on orders $75+</div>
+    <div class="cart-progress" aria-hidden="true"><span id="shipProgress"></span></div><div class="ship-note" id="shipNote">Digital resources — no shipping required</div>
     <button class="btn btn-coral" onclick="checkout()">Checkout</button>
   </div>
 </aside>

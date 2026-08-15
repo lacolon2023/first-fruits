@@ -90,19 +90,6 @@ const PRODUCTS = [
     },
     "image": "flashcards.jpg",
     "desc": "High-frequency sight words sequenced for K–2 readers, for word walls, flash review, and fluency games."
-  },
-  {
-    "id": "bundle",
-    "cats": "classroom",
-    "name": "Teacher Resource Bundle",
-    "fmt": "Classroom Package",
-    "price": 59.99,
-    "pill": {
-      "t": "Educator",
-      "c": "gold"
-    },
-    "image": "teacher.jpg",
-    "desc": "Lesson plans, differentiation supports, assessment tools, classroom routines, and reproducible student resources."
   }
 ];
 
