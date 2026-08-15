@@ -149,7 +149,7 @@ function art(kind){
       <circle cx="215" cy="170" r="15" fill="#1fa5b8"/>
       <path d="M245 150l20 0 0 20 -20 0z" fill="#1f8a54" transform="rotate(12 255 160)"/>
       <rect x="150" y="188" width="120" height="8" rx="4" fill="#fff" opacity=".5"/>
-      <text x="200" y="252" text-anchor="middle" font-family="Nunito" font-size="13" font-weight="800" fill="#14663f">Everything you need — shipped</text>`,
+      <text x="200" y="252" text-anchor="middle" font-family="Nunito" font-size="13" font-weight="800" fill="#14663f">Everything you need — digital</text>`,
   };
   return `<svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice">${shapes[kind]||base}</svg>`;
 }
