@@ -50,7 +50,7 @@ const PRODUCTS = [
       "c": "teal"
     },
     "image": "seasonal.jpg",
-    "desc": "Christ-centered lessons and activities for Christmas, Easter, gratitude, creation, and other seasonal themes — differentiated K–2."
+    "desc": "Christ-centered lessons and activities for Christmas, Easter, gratitude, creation, and other seasonal themes — for Kindergarten."
   },
   {
     "id": "flashcards",
